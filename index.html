@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/modernizr.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="css/commonStyle.css">
+</head>
+<body>
+<div id="fullpage">
+	<header id="nav-wrapper">
+		<a id="nav-toggle-main" class="nav-toggle" href=""><i class="fa fa-location-arrow fa-3x" style="margin:9px"></i></a>
+		<div id="nav-item-cont">
+			<a id="nav-toggle-close" class="nav-toggle" href="">x</a>
+			<a class="nav-item" href="#landing">Home</a>
+			<a class="nav-item" href="#portfolio">Portfolio</a>
+			<a class="nav-item" href="#l-update">Updates</a>
+			<a class="nav-item anchorDisabled" href="">Coming Soon 2!</a>
+			<a class="nav-item anchorDisabled" href="">Coming Soon 3!</a>
+			<a class="nav-item anchorDisabled" href="">Coming Soon 4!</a>
+			<a class="nav-item" href="#contact">Contact</a>
+		</div>
+	</header>
+
+	<div id="landing-wrapper" class="section" style="background: url('imgs/test-background.jpg') no-repeat;">
+		<div id="l-background" style=""> <!--possible video bg--></div>
+		<div id="l-info"><!--transparent bg; center justify; neonae svg, neonae tag-->
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 900 900" enable-background="new 0 0 900 900" xml:space="preserve"><g id="neonae_logo"><g id="top_e"><polygon points="663.667,438.252 663.667,381.763 802,301.7 663.667,222.023 663.667,165 900,301.7 		"/></g><g id="bottom_ne"><polygon points="49.433,714.5 0.433,714.5 0.433,303.45 237.716,166.454 475,303.45 475,549.151 663.284,657.857 900,521.25 
+			900,577.875 663.284,714.438 426,577.442 426,331.74 237.716,223.034 49.433,331.74 		"/></g></g>
+			<h1 id="neonae_h1">neonae</h1>
+		</div>
+		<a id="l-update-toggle" class="" href=""><i class="fa fa-2x" style="color:#117716"></i></a><!--text: cycle through neonae green/neonae blue/neonae violet?-->
+		<div id="l-update" class="tran400"><!--Change bg to translucent gray and white text -->
+			<p id="l-update-def-txt" style="margin-top:9px; text-align:center">To properly view this, please widen the window.</p>
+			<div id="entry-1" class="l-update-info-wrapper"><h3 class="l-update-info-head">Entry #1 (Sunday, 11 January 2015)</h3><p class="l-update-info-text">So this is my first website that I have actually completed... I have been up for almost 48 hours to be within...24 hours past my deadline (also did that quite often during school nights :/)? Anyway here are a few update notes for next time:<br><br>UPDATE DEFINITIONS<br>&nbsp;&nbsp;&nbsp;-Soft Update (S): Thursday, 15 January 2015<br>&nbsp;&nbsp;&nbsp;-Hard Update (H): Sunday, 1 February 2015<br>STYLING ISSUES<br>&nbsp;&nbsp;&nbsp;-Navigation Styling<br>&nbsp;&nbsp;&nbsp;-Tooltips for Navigation<br>&nbsp;&nbsp;&nbsp;-Background Image (S)<br>&nbsp;&nbsp;&nbsp;-Color Scheme (S)<br>&nbsp;&nbsp;&nbsp;-Official Neonae Font (S;hopefully)<br>PRACTICAL ISSUES<br>&nbsp;&nbsp;&nbsp;-Superfluous code removal and optimization (H)<br>&nbsp;&nbsp;&nbsp;-File recombination and optimization (H)<br>FEATURE UPDATES<br>&nbsp;&nbsp;&nbsp;-More Portfolio Content (S, H)<br>&nbsp;&nbsp;&nbsp;-Timers that countdown for hard and soft updates (H)<br>&nbsp;&nbsp;&nbsp;-Dynamic web page (H;future)<br>BUG FIXES<br>&nbsp;&nbsp;&nbsp;-Please report any :)</p></div>
+			<!-- <div id="" class="l-update-info-wrapper"><h3 class="l-update-info-head">Entry # (Entry Date)</h3><p class="l-update-info-text">(description)</p></div> -->
+			<input type="button"><!--download update history-->
+		</div>
+	</div>
+	
+	<div id="portfolio-temp-wrapper" class="section" style="background: url('imgs/test-background.jpg') no-repeat;">
+		<div class="wrapper">
+			<div class="project-cont slide">
+				<div class="image">
+					<div class="image-slider">
+						<img class="image-slide" src="imgs/image-preview.jpg">
+						<img class="image-slide" src="imgs/image-preview.jpg">
+						<img class="image-slide" src="imgs/image-preview.jpg">
+					</div>
+					<div class="image-navigator">
+						<a class="image-tab tran400" href=""></a>
+						<a class="image-tab tran400" href=""></a>
+						<a class="image-tab tran400" href=""></a>
+					</div>
+				</div>
+				<div class="project">
+					<div class="project-details">
+						<h2 class="project-title">Neonae Website</h2>
+						<p class="project-description">Neonae website.</p>
+						<div class="project-buttons"><form>
+							<button type="button" id="" class="project-button tran400" onClick="" value="">Download Image Collage</button>
+							<button type="button" id="button-2" class="project-button tran400" onClick="" value="">Backstory</button>
+						</form></div>
+					</div>
+				</div>
+			</div>
+			<footer class="other-projects">
+				<a href="" class="footer-tab"><i class="fa "></i></a>
+				<div class="wrapper-with-margin">
+					<div id="other-proj-carousel-cont">
+						<div style="background-image:url('imgs/image-preview.png');background-position: center;background-size: auto 100%;box-sizing: border-box;"></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<div id="contact-wrapper" class="section" style="background: url('imgs/test-background.jpg') no-repeat;">
+		<div id="c-background"></div><!--right now idk-->
+		<div id="c-info-wrapper" class="contact-content">
+			<table>
+				<th colspan="2" style="color:#FFF;font-size:36px">Let's talk business.</th>
+				<tr><td><i class="c-fa fa fa-envelope-o fa-2x"></i></td><td>neonae@neonae.com</td></tr>
+				<tr><td><i class="c-fa fa fa-phone fa-2x"></i></td><td>No private office, yet.</td></tr>
+				<tr><td><i class="c-fa fa fa-map-marker fa-2x"></i></td><td>No private office, yet.</td></tr>
+			</table><!--Use pseudo-elements to add in descriptions if the window gets wider. e.g. minimal width=icon+description available on tap (in description add in "tap to see"; otherwise display it outright+nice hover transitions-->
+			</ul>
+		</div>
+		<form id="c-message-wrapper" class="contact-content">
+			<input class="c-form-element c-form-text-element tran400" type="text" name="contact-name" placeholder="your name" required>
+			<input class="c-form-element c-form-text-element tran400"  type="email" name="contact-email" placeholder="your email address" required>
+			<textarea id="c-message" class="c-form-element c-form-text-element tran400" name="contact-email-body" placeholder="type your message C:" required></textarea>
+			<input class="c-form-element c-form-button tran121" type="button" value="send message"><!--Disabled for now-->
+		</form>
+		<div id="c-footer">
+				<table>
+				<tr>
+					<td class="c-footer-link"><a href="" target="_blank"><i class="fa fa-behance fa-2x"></i></a></td>
+					<td class="c-footer-link"><a href="" target="_blank"><i class="fa fa-pinterest fa-2x"></i></a></td>
+					<td class="c-footer-link"><a href="" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></td>
+					<!-- <td class="c-footer-link"><a href="" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a></td> -->
+					<td class="c-footer-link"><a href="" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></td><!-- 
+					<td class="c-footer-link"><a href="" target="_blank"><i></i></a></td>
+					<td class="c-footer-link"><a href="" target="_blank"><i></i></a></td> -->
+				</tr>
+				</table>
+			</div>
+
+			<p class="contact-content">For the update schedule, please see <em>Updates</em> at the <a class="tran400" href="#landing">home page</a>.</p>
+	</div>
+
+</div>
+</body>
+	<script type="text/javascript">
+	/*Insert validation code; otherwise disable submit in the mean time*/
+		var errorMessage='Well this is embarassing...\nYour message did not go through. Please, in the meantime, directly contact us through our email: "neonae@neonae.com"';
+		$('.c-form-button').click(function(){alert(errorMessage);});
+		$('.anchorDisabled').click(function(event){event.preventDefault();alert('Coming Soon!')});
+	</script>
+	<script src="js/commonScript.js"></script>
+	<script src="landing.js"></script>
+	<script src="portfolio.js"></script>
+	<script src="contact.js"></script>
+	<link rel="stylesheet" type="text/css" href="landing.css">
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
+	<link rel="stylesheet" type="text/css" href="contact.css">
+</html>

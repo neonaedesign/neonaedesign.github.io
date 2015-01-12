@@ -1,0 +1,152 @@
+#contact-wrapper{
+}
+	.contact-content{
+		width:100%;
+	}
+
+#c-info-wrapper{
+	margin-top:25px;
+}
+	#c-info-wrapper table{
+		margin:0 auto;
+	}
+		#c-info-wrapper td{
+			padding-left:16px;
+			padding-bottom:9px;
+			color:#FFF;
+			text-align:center;
+		}
+		.fa-envelope-o:hover{
+			color:#E64437;
+		}
+		.fa-phone:hover{
+			color:#FE695D;
+
+		}
+		.fa-map-marker:hover{
+			color:#FF8A81;
+		}
+
+#c-message-wrapper{
+}
+	.c-form-element{
+		width:64%;
+		margin:9px auto;
+		text-align:center;
+		display:block;
+		outline:none;
+		font-family:'Oxygen';	/*Eventually change to Neonae Font*/
+		font-size:1.00em;
+		color:#FFF;
+	}
+		::-webkit-input-placeholder{
+			color:rgba(196,196,196,0.81);
+			font-style:italic;
+		}
+		:-moz-placeholder{
+			color:rgba(196,196,196,0.81);
+			font-style:italic;
+		}
+		::-moz-placeholder{
+			color:rgba(196,196,196,0.81);
+			font-style:italic;
+		}
+		:-ms-placeholder{
+			color:rgba(196,196,196,0.81);
+			font-style:italic;
+		}
+		.c-form-text-element{
+			border:none;
+			border-bottom:solid 1px #FFF;
+			background:transparent;
+		}
+		.c-form-text-element:focus{
+			border-bottom:solid 4px #47C25C;
+		}
+		#c-message-wrapper [type="text"]{
+
+		}
+		#c-message-wrapper [type="email"]{
+
+		}
+		#c-message-wrapper textarea{
+			border-top:dotted 1px #FFF;
+			border-left:dotted 1px #FFF;
+			border-right:dotted 1px #FFF;
+			text-align:left;
+			resize:none;
+
+		}
+		.c-form-button{
+			margin-top:1px;
+			border:solid 1px #FFF;
+			background:transparent;
+		}
+		.c-form-button:active{
+			border:solid 1px rgba(241,241,241,0.64);
+			color:rgba(241,241,241,0.36);
+		}
+
+#c-footer{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:9%;
+}
+	#c-footer table{
+		width:100%;
+		height:100%;
+		vertical-align:middle;
+	}
+		#c-footer td{
+			width:auto;
+			text-align:center;
+		}
+		.fa-behance:hover{
+			color:#005CFF;
+		}
+		.fa-pinterest:hover{
+			color:#CB2027;
+		}
+		.fa-facebook:hover{
+			color:#3B5998;
+		}
+		.fa-google-plus:hover{
+			color:#DC4A38;
+		}
+		.fa-twitter:hover{
+			color:#2AA9E0;
+		}
+
+#contact-wrapper p{
+	margin:0 auto;
+	text-align:center;
+	color:#FFF;
+}
+#contact-wrapper a{
+	color:rgb(196,196,196);
+	text-decoration:underline;
+}
+	#contact-wrapper a:hover{
+		color:#FE695D;			/*Neonae Red*/
+		text-decoration:none;
+	}
+@media (max-width:441px), (max-height:441px){
+	#contact-wrapper{
+	}
+}
+
+@media (min-width:1141px){
+	.c-form-element{
+		width:81%;
+		font-size:1.44em;
+	}
+}
+
+@media (min-width:1141px and max-width:1919px){
+
+}
+
+@media (min-width:1920px){
+
+}
