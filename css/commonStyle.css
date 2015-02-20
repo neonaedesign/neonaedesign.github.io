@@ -92,8 +92,11 @@ p,a{
 	width:81px;
 	height:81px;
 }
-	#nav-toggle-main i{
-		color:#117716;				/*change later*/
+	.fa-location-arrow{
+		color:#117716;
+	}
+	.fa-location-arrow:hover{
+		color:#3D8F42;
 	}
 #nav-item-cont{
 	position:absolute;
@@ -116,11 +119,26 @@ p,a{
 		height:30px;
 		display:block;
 		clear:both;
-		font-size:1.21em;
+		font-size:25px;
 		text-align:center;
+
+		position:relative;
+		color:transparent;
 
 		background:gray;
 	}
+		.nav-item:hover:after{
+		    position:absolute;
+		    z-index:98;
+		    padding:4px;
+		    width:64px;
+		    background:rgba(169,169,169,0.25);
+		    border-radius:5px;
+		    content:attr(title);
+		    font-family:'Oxygen Light';
+		    font-size:16px;
+		    color:#FFF;
+		}
 
 #nav-item-cont.navShow{
 	top:0;
@@ -136,6 +154,12 @@ p,a{
 	#nav-item-cont{
 		background:#FFF;
 	}
+		.nav-item{
+			color:#FFF;
+		}
+		.nav-item:hover:after{
+		    opacity:0.00;
+		}
 }
 
 @media (min-width:1141px){
@@ -159,14 +183,33 @@ p,a{
 		.nav-item{
 			position:relative;
 			margin-top:0;
-			margin-right:30px;
-			width:30px;
+			margin-right:16px;
+			width:16px;
+			height:16px;
+			border-radius:100%;
 			display: inline-block;
+			background-color:#117716;
+		
+			border-left:solid 0px transparent;
+			border-right:solid 0px transparent;
+			box-shadow:0 0 0 1px transparent inset;
+
+			transition:all 0.441s ease-in-out;
+		}
+		.nav-item:hover{
+			border-left:solid 2px #FFF;
+			border-right:solid 2px #FFF;
+		}
+		.nav-item:hover:after{
+		    opacity:1.00;
 		}
 }
 
 @media (min-width:1141px) and (max-width:1919px){
-
+	.nav-item:hover:after{
+	    bottom:-169%;
+	    left:-144%;
+	}
 }
 
 @media(max-width:1920px){
@@ -197,12 +240,22 @@ p,a{
 			display:none;
 		}
 		.nav-item{
+			left:9px;
 			margin-right:0;
-			margin-top:30px;
-			width:100%;
-			height:30px;
+			margin-top:16px;
 			display:block;
 		}
+		.nav-item:hover:after{
+		    left:144%;
+		    bottom:0;
+		}
+		.selected-nav{
+			background-color:transparent;
+			border:solid 1px #FFF;
+			color:#000;
+			font-size:12px;
+		}
+
 
 	#nav-item-cont.navShow{
 		top:81px;

@@ -21,6 +21,7 @@ $('.nav-toggle').click(function(event) {
 	}
 	navCont.toggleClass('navShow');
 	reaffirmStyle();
+	console.log('fired');
 });
 
 var reaffirmStyle=function(){
@@ -80,7 +81,6 @@ var reaffirmStyle=function(){
 		$('#nav-toggle-main i').removeClass('fa-3x').addClass('fa-4x');
 	}
 
-
 }
 
 $(window).resize(function(){
@@ -96,10 +96,14 @@ $(document).ready(function(){
 
 	/*Text Area Expander*/
 
+
+	/*Main Script*/
 	reaffirmStyle();
 });
 
 $('.nav-item').click(function(event){
-
+	$('.nav-item').removeClass('selected-nav');
+	var sel_navItem=$(this).attr('id');
+	$(this).addClass('selected-nav');
 });
 

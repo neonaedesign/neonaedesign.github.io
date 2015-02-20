@@ -77,7 +77,7 @@ $(document).ready(function(){
 		//Change Later for Dynamic
 
 		navigation:true,
-		navigationText:["<i class='icon-chevron-left icon-white'><</i>","<i class='icon-chevron-right icon-white'>></i>"],
+		navigationText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
 
 	});
 });
