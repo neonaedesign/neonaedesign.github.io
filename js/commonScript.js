@@ -90,12 +90,12 @@ $(window).resize(function(){
 $(document).ready(function(){
 	/*Full Page*/
 	$('#fullpage').fullpage({
-		anchors:['landing','portfolio', 'contact'],
+		anchors:['home','portfolio', 'contact'],
 		fixedElements:'#nav-toggle-main, #nav-item-cont'
 	});
 
 	/*Text Area Expander*/
-
+	$('.animated-textarea').autosize();
 
 	/*Main Script*/
 	reaffirmStyle();

@@ -67,6 +67,12 @@ $('.footer-tab').click(function(event) {
 	footer.animate({
 		bottom: newbottom + 'px'
 	}, 400, 'easeInOutCubic');*/
+
+	if(footer.hasClass('footer-expand')){
+		$('.footer-tab i').removeClass('fa-angle-up').addClass('fa-angle-down');
+	}else{
+		$('.footer-tab i').removeClass('fa-angle-down').addClass('fa-angle-up');
+	}
 });
 
 /*Owl Carousel Javascript*/

@@ -20,7 +20,7 @@ h2, p{
 #section-name {
 	height: 81px;
 	line-height: 81px;
-	background: lightgreen;
+	/*background: lightgreen;*/
 	position: relative;
 }
 
@@ -46,7 +46,7 @@ section {
 	display:flex;  
 	position:relative;
 	left:0;
-	background: skyblue;
+	/*background: skyblue;*/
 	overflow:hidden;
 }
 
@@ -131,10 +131,6 @@ section {
 
 	.project-button:hover {
 		background-color:#138819;
-	}
-
-	.project-button:active {
-		background-color:#541388;
 	}
 
 footer {
@@ -273,7 +269,7 @@ footer {
 		width:40px;
 		height:40px;
 		display:block;
-		background: yellow; /*delete*/
+		/*background: yellow; delete*/
 	}
 
 	section {

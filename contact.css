@@ -40,28 +40,33 @@
 		color:#FFF;
 	}
 		::-webkit-input-placeholder{
-			color:rgba(196,196,196,0.81);
+			color:rgba(255,255,255,0.64);
 			font-style:italic;
 		}
 		:-moz-placeholder{
-			color:rgba(196,196,196,0.81);
+			color:rgba(255,255,255,0.64);
 			font-style:italic;
 		}
 		::-moz-placeholder{
-			color:rgba(196,196,196,0.81);
+			color:rgba(255,255,255,0.64);
 			font-style:italic;
 		}
 		:-ms-placeholder{
-			color:rgba(196,196,196,0.81);
+			color:rgba(255,255,255,0.64);
 			font-style:italic;
 		}
 		.c-form-text-element{
 			border:none;
 			border-bottom:solid 1px #FFF;
 			background:transparent;
+			resize:none;
+			
+			-webkit-transition: all 0.441s;
+			-moz-transition: all 0.441s;
+			transition: all 0.441s;
 		}
 		.c-form-text-element:focus{
-			border-bottom:solid 4px #47C25C;
+			border-bottom:solid 4px #119227;
 		}
 		#c-message-wrapper [type="text"]{
 
@@ -71,8 +76,6 @@
 		}
 		#c-message-wrapper textarea{
 			border-top:dotted 1px #FFF;
-			border-left:dotted 1px #FFF;
-			border-right:dotted 1px #FFF;
 			text-align:left;
 			resize:none;
 
@@ -124,8 +127,7 @@
 	color:#FFF;
 }
 #contact-wrapper a{
-	color:rgb(196,196,196);
-	text-decoration:underline;
+	color:rgb(225,225,225);
 }
 	#contact-wrapper a:hover{
 		color:#FE695D;			/*Neonae Red*/
@@ -138,7 +140,7 @@
 
 @media (min-width:1141px){
 	.c-form-element{
-		width:81%;
+		width:64%;
 		font-size:1.44em;
 	}
 }

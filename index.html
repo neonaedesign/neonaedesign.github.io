@@ -6,6 +6,7 @@
 	<script src="js/modernizr.min.js"></script>
 	<script src="js/jquery.fullPage.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.autosize.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
@@ -40,7 +41,7 @@
 			<h1 id="neonae_h1">neonae</h1>
 			<div id="l-countdown" style="background-color:#000"></div>
 		</div>
-		<a id="l-update-toggle" class="" href=""><i class="fa fa-2x" style="color:#117716"></i></a><!--text: cycle through neonae green/neonae blue/neonae violet?-->
+		<a id="l-update-toggle" class="" href=""><i class="fa fa-2x" style="color:#119227"></i></a><!--text: cycle through neonae green/neonae blue/neonae violet?-->
 		<div id="l-update" class="tran400"><!--Change bg to translucent gray and white text -->
 			<p id="l-update-def-txt" style="margin-top:9px; text-align:center">To properly view this, please widen the window. more updates on 22 Feb 2015</p>
 			<div id="entry-1" class="l-update-info-wrapper"><h3 class="l-update-info-head"></h3><p class="l-update-info-text">22 Feb 2015 Updates: Download button updates, contact page update (styling)<br>MORE UPDATES TO COME on 20 February 2015. Major updates: navigation. Updates on 20 February 2015: bacgkround, update timer (at least)</p></div>
@@ -76,7 +77,7 @@
 				</div>
 			</div>
 			<footer class="other-projects">
-				<a href="" class="footer-tab"><i class="fa "></i></a>
+				<a href="" class="footer-tab" style="text-align:center"><i class="fa fa-angle-up"></i></a>
 				<div class="wrapper-with-margin">
 					<div id="other-proj-carousel-cont">
 						<div style="background-image:url('imgs/image-preview.png');background-position: center;background-size: auto 100%;box-sizing: border-box;"></div>
@@ -98,8 +99,8 @@
 		<div id="c-background"></div><!--right now idk-->
 		<div id="c-info-wrapper" class="contact-content">
 			<table>
-				<th colspan="2" style="color:#FFF;font-size:36px">Let's talk business.</th>
-				<tr><td><a href="mailto:neonae@neonae.com"><i class="c-fa fa fa-envelope-o fa-2x"></i></td></a><td>neonae@neonae.com</td></tr>
+				<th colspan="2" style="color:#FFF;font-size:36px">Let's talk.</th>
+				<tr><td><a href="mailto:neonae@neonae.com"><i class="c-fa fa fa-envelope-o fa-2x"></i></td></a><td><a href="mailto:neonae@neonae.com">neonae@neonae.com</a></td></tr>
 				<tr><td><i class="c-fa fa fa-phone fa-2x"></i></td><td>No private office, yet.</td></tr>
 				<tr><td><i class="c-fa fa fa-map-marker fa-2x"></i></td><td>No private office, yet.</td></tr>
 			</table><!--Use pseudo-elements to add in descriptions if the window gets wider. e.g. minimal width=icon+description available on tap (in description add in "tap to see"; otherwise display it outright+nice hover transitions-->
@@ -108,7 +109,7 @@
 		<form id="c-message-wrapper" class="contact-content">
 			<input class="c-form-element c-form-text-element tran400" type="text" name="contact-name" placeholder="your name" required>
 			<input class="c-form-element c-form-text-element tran400"  type="email" name="contact-email" placeholder="your email address" required>
-			<textarea id="c-message" class="c-form-element c-form-text-element tran400" name="contact-email-body" placeholder="type your message C:" required></textarea>
+			<textarea id="c-message" class="c-form-element c-form-text-element animated-textarea tran400" name="contact-email-body" placeholder="type your message C:" required></textarea>
 			<input class="c-form-element c-form-button tran121" type="button" value="send message"><!--Disabled for now-->
 		</form>
 		<div id="c-footer">
@@ -125,7 +126,7 @@
 				</table>
 			</div>
 
-			<p class="contact-content">For the update schedule, please see <em>Updates</em> at the <a class="tran400" href="#landing">home page</a>.</p>
+			<p class="contact-content">For the update schedule, please see <em>Updates</em> at the <a class="tran400" href="#home">home page</a>.</p>
 	</div>
 
 </div>
