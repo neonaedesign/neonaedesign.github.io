@@ -11,6 +11,10 @@
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
 	<link rel="stylesheet" type="text/css" href="css/commonStyle.css">
+
+	<title>Neonae</title>
+	<meta name="description">
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 </head>
 <body>
 <div id="fullpage">
@@ -18,33 +22,34 @@
 		<a id="nav-toggle-main" class="nav-toggle" href=""><i class="fa fa-location-arrow fa-3x" style="margin:9px"></i></a>
 		<div id="nav-item-cont">
 			<a id="nav-toggle-close" class="nav-toggle" href="">x</a>
-			<a title="Home" class="nav-item" href="#landing">Home</a>
-			<a title="Portfolio" class="nav-item" href="#portfolio">Portfolio</a>
+			<a title="Home" class="nav-item tran400" href="#home">Home</a>
+			<a title="Portfolio" class="nav-item tran400" href="#portfolio">Portfolio</a>
 			<!-- <a title="Updates" class="nav-item" href="#l-update">Updates</a> -->
-			<a title="Coming Soon!" class="nav-item anchorDisabled" href=""></a>
-			<a title="Coming Soon!" class="nav-item anchorDisabled" href=""></a>
-			<a title="Coming Soon!" class="nav-item anchorDisabled" href=""></a>
-			<a title="Contact" class="nav-item" href="#contact">Contact</a>
+			<a title="Coming Soon!" class="nav-item anchorDisabled tran400" href="">Coming Soon!</a>
+			<a title="Coming Soon!" class="nav-item anchorDisabled tran400" href="">Coming Soon!</a>
+			<a title="Coming Soon!" class="nav-item anchorDisabled tran400" href="">Coming Soon!</a>
+			<a title="Contact" class="nav-item tran400" href="#contact">Contact</a>
 		</div>
 	</header>
 
-	<div id="landing-wrapper" class="section" style="background: url('imgs/test-background.jpg') no-repeat;">
+	<div id="landing-wrapper" class="section" style="background: url('imgs/bgtile2.png') repeat;">
 		<div id="l-background" style=""> <!--possible video bg--></div>
-		<div id="l-info"><!--transparent bg; center justify; neonae svg, neonae tag-->
+		<div id="l-info"><!--transparent bg; center justify; neonae svg,h neonae tag, timer-->
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 900 900" enable-background="new 0 0 900 900" xml:space="preserve"><g id="neonae_logo"><g id="top_e"><polygon points="663.667,438.252 663.667,381.763 802,301.7 663.667,222.023 663.667,165 900,301.7 		"/></g><g id="bottom_ne"><polygon points="49.433,714.5 0.433,714.5 0.433,303.45 237.716,166.454 475,303.45 475,549.151 663.284,657.857 900,521.25 
 			900,577.875 663.284,714.438 426,577.442 426,331.74 237.716,223.034 49.433,331.74 		"/></g></g>
 			<h1 id="neonae_h1">neonae</h1>
+			<div id="l-countdown" style="background-color:#000"></div>
 		</div>
 		<a id="l-update-toggle" class="" href=""><i class="fa fa-2x" style="color:#117716"></i></a><!--text: cycle through neonae green/neonae blue/neonae violet?-->
 		<div id="l-update" class="tran400"><!--Change bg to translucent gray and white text -->
-			<p id="l-update-def-txt" style="margin-top:9px; text-align:center">To properly view this, please widen the window. more updates on 20 Feb 2015</p>
-			<div id="entry-1" class="l-update-info-wrapper"><h3 class="l-update-info-head"></h3><p class="l-update-info-text">MORE UPDATES TO COME on 20 February 2015. Major updates: navigation. Updates on 20 February 2015: bacgkround, update timer (at least)</p></div>
+			<p id="l-update-def-txt" style="margin-top:9px; text-align:center">To properly view this, please widen the window. more updates on 22 Feb 2015</p>
+			<div id="entry-1" class="l-update-info-wrapper"><h3 class="l-update-info-head"></h3><p class="l-update-info-text">22 Feb 2015 Updates: Download button updates, contact page update (styling)<br>MORE UPDATES TO COME on 20 February 2015. Major updates: navigation. Updates on 20 February 2015: bacgkround, update timer (at least)</p></div>
 			<!-- <div id="" class="l-update-info-wrapper"><h3 class="l-update-info-head">Entry # (Entry Date)</h3><p class="l-update-info-text">(description)</p></div> -->
-			<input type="button"><!--download update history-->
+			<button  title="Download update history" type="button" id="download-button" class="tran400"></button><!--download update history-->
 		</div>
 	</div>
 	
-	<div id="portfolio-temp-wrapper" class="section" style="background: url('imgs/test-background.jpg') no-repeat;">
+	<div id="portfolio-temp-wrapper" class="section" style="background: url('imgs/bgtile2.png') repeat;">
 		<div class="wrapper">
 			<div class="project-cont slide">
 				<div class="image">
@@ -89,7 +94,7 @@
 		</div>
 	</div>
 
-	<div id="contact-wrapper" class="section" style="background: url('imgs/test-background.jpg') no-repeat;">
+	<div id="contact-wrapper" class="section" style="background: url('imgs/bgtile2.png') repeat;">
 		<div id="c-background"></div><!--right now idk-->
 		<div id="c-info-wrapper" class="contact-content">
 			<table>

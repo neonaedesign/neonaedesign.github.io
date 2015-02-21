@@ -111,7 +111,7 @@ p,a{
 		float:right;
 		font-size:24px;
 
-		background:white;
+		color:#3D8F42;
 	}
 	.nav-item{
 		margin-top:9px;
@@ -120,13 +120,15 @@ p,a{
 		display:block;
 		clear:both;
 		font-size:25px;
+		font-weight:bold;
 		text-align:center;
 
 		position:relative;
 		color:transparent;
-
-		background:gray;
 	}
+		.nav-item:active{
+			color:#2F6B6E;
+		}
 		.nav-item:hover:after{
 		    position:absolute;
 		    z-index:98;
@@ -152,10 +154,10 @@ p,a{
 		font-size:169%;
 	}
 	#nav-item-cont{
-		background:#FFF;
+		background:transparent;
 	}
 		.nav-item{
-			color:#FFF;
+			color:#3D8F42;
 		}
 		.nav-item:hover:after{
 		    opacity:0.00;
@@ -199,6 +201,7 @@ p,a{
 		.nav-item:hover{
 			border-left:solid 2px #FFF;
 			border-right:solid 2px #FFF;
+			background-color:#3D8F42;
 		}
 		.nav-item:hover:after{
 		    opacity:1.00;

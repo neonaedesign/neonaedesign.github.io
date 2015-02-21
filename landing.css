@@ -35,6 +35,12 @@ svg{
 			font-size:1.44em;
 			color:#FFF;
 		}
+		#l-countdown{
+			position:relative;
+			margin:36px auto;
+			width:80%;
+			height:20%;
+		}
 	#l-update-toggle{
 		position:absolute;
 		z-index:1;
@@ -63,6 +69,19 @@ svg{
 
 		}
 		.l-update-info-text{
+		}
+		#download-button{
+			margin:auto;
+			border:none;
+			border-radius:4px;
+			padding:0.64em 0.81em;
+			background-color:#117716;
+			font-family:'Oxygen Light';
+			color:#FFF;
+			font-size:1.00em;
+			font-weight:bold;
+			outline:none;
+			cursor:pointer;
 		}
 
 
