@@ -7,6 +7,7 @@
 	<script src="js/jquery.fullPage.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.autosize.min.js"></script>
+	<script src="js/jquery.countdown.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
@@ -17,6 +18,17 @@
 	<meta name="description">
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 </head>
+<script type="text/javascript">
+$(function() {
+    var endDate = "February 28, 2015 23:59";    //Set release date
+    $('#l-countdown').countdown({
+        date: endDate,
+        render: function(data) {
+        $(this.el).html("<td class='time_countdown'>" + this.leadingZeros(data.days, 2) + "</td><td class='time_countdown'>" + this.leadingZeros(data.hours, 2) + "</td><td class='time_countdown'>" + this.leadingZeros(data.min, 2) + "</td><td class='time_countdown'>" +this.leadingZeros(data.sec, 2) + "</td>");
+        }
+    });
+});
+</script>
 <body>
 <div id="fullpage">
 	<header id="nav-wrapper">
@@ -39,12 +51,17 @@
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 900 900" enable-background="new 0 0 900 900" xml:space="preserve"><g id="neonae_logo"><g id="top_e"><polygon points="663.667,438.252 663.667,381.763 802,301.7 663.667,222.023 663.667,165 900,301.7 		"/></g><g id="bottom_ne"><polygon points="49.433,714.5 0.433,714.5 0.433,303.45 237.716,166.454 475,303.45 475,549.151 663.284,657.857 900,521.25 
 			900,577.875 663.284,714.438 426,577.442 426,331.74 237.716,223.034 49.433,331.74 		"/></g></g>
 			<h1 id="neonae_h1">neonae</h1>
-			<div id="l-countdown" style="background-color:#000"></div>
+			<table id="l-status-cdown">
+				<tr id="l-countdown"></tr>
+			</table>
+			<table id="l-status-info">
+				<tr id="l-cdowninfo"><td class="l-table-excep">Until next website update (portfolio, bug fixes, and promotions). Come back soon!</td></tr>
+				<tr id="l-promotions"><td class="l-table-excep">Good news! Since <a href="#home" class="tran400">Neonae</a> is relatively new, Neonae is offering <strong>free</strong> graphics work to the <a href="#contact" class="tran400">first 4 contacting clients! Promotion starts soon!</a> (See the above and <em>Updates</em> for timing details)</td></tr></table>
 		</div>
 		<a id="l-update-toggle" class="" href=""><i class="fa fa-2x" style="color:#119227"></i></a><!--text: cycle through neonae green/neonae blue/neonae violet?-->
 		<div id="l-update" class="tran400"><!--Change bg to translucent gray and white text -->
 			<p id="l-update-def-txt" style="margin-top:9px; text-align:center">To properly view this, please widen the window. more updates on 22 Feb 2015</p>
-			<div id="entry-1" class="l-update-info-wrapper"><h3 class="l-update-info-head"></h3><p class="l-update-info-text">22 Feb 2015 Updates: Download button updates, contact page update (styling)<br>MORE UPDATES TO COME on 20 February 2015. Major updates: navigation. Updates on 20 February 2015: bacgkround, update timer (at least)</p></div>
+			<div id="entry-1" class="l-update-info-wrapper"><h3 class="l-update-info-head"></h3><p class="l-update-info-text">Updates on 28 Feb 2015: Entry #1 for Neonae portfolio, styling updates for countdown timer, <em>hopefully some styling updates for other elements</em><br>22 Feb 2015 Updates: contact page update (styling)<br>MORE UPDATES TO COME on 20 February 2015. Major updates: navigation. Updates on 20 February 2015: bacgkround, update timer (at least)</p></div>
 			<!-- <div id="" class="l-update-info-wrapper"><h3 class="l-update-info-head">Entry # (Entry Date)</h3><p class="l-update-info-text">(description)</p></div> -->
 			<button  title="Download update history" type="button" id="download-button" class="tran400"></button><!--download update history-->
 		</div>

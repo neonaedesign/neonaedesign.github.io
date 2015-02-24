@@ -35,12 +35,33 @@ svg{
 			font-size:1.44em;
 			color:#FFF;
 		}
-		#l-countdown{
+		#l-status-cdown, #l-status-info{
 			position:relative;
 			margin:36px auto;
 			width:80%;
 			height:20%;
 		}
+		.time_countdown{
+			width:25%;
+			font-family:'Oxygen';
+			font-size:1.96em;
+		}
+		#l-status-info{
+			margin:0 auto;
+			height:auto;
+		}
+			#l-status-info td{
+				color:#FFF;
+			}
+			#l-status-info a{
+				color:#E1E1E1;
+			}
+			#l-status-info a:hover{
+				color:#47C25C;
+			}
+		
+
+
 	#l-update-toggle{
 		position:absolute;
 		z-index:1;

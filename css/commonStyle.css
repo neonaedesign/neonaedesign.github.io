@@ -65,10 +65,10 @@ h1{
 h2{
 	font-family:'Open Sans';
 }
-h3,th,td{
+h3,th{
 	font-family:'Oxygen'
 }
-p,a{
+p,a,td{
 	font-family:'Oxygen Light';
 	text-decoration:none;
 }

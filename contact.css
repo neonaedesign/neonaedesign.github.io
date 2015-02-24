@@ -127,11 +127,10 @@
 	color:#FFF;
 }
 #contact-wrapper a{
-	color:rgb(225,225,225);
+	color:#E1E1E1;
 }
 	#contact-wrapper a:hover{
-		color:#FE695D;			/*Neonae Red*/
-		text-decoration:none;
+		color:#47C25C;
 	}
 @media (max-width:441px), (max-height:441px){
 	#contact-wrapper{
