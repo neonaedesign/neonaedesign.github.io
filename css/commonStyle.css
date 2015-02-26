@@ -31,12 +31,6 @@
 	-o-transition:all 0.400s ease-in-out;
 	transition:all 0.400s ease-in-out;
 }
-.tran121{
-	-webkit-transition:all 0.121s ease-in-out;
-	-moz-transition:all 0.121 ease-in-out;
-	-o-transition:all 0.121 ease-in-out;
-	transition:all 0.121 ease-in-out;
-}
 .fa{
 	color:#FFF;
 	-webkit-transition: color 0.361s ease-in-out;
@@ -73,6 +67,38 @@ p,a,td{
 	text-decoration:none;
 }
 
+.glbl-green-fa{
+	color:#119227;
+}
+.glbl-spclGrn-link{
+	color:#E1E1E1;
+
+}
+.glbl-green-fa:hover, .glbl-spclGrn-link:hover{
+	color:#47C25C;
+}
+.glbl-para-desc{
+	margin:0 auto;
+	text-align:center;
+	color:#FFF;
+}
+.glbl-bttnGrn{
+	border:none;
+	border-radius:4px;
+	padding:0.64em 0.81em;
+	background-color:#119227;
+	font-family:'Oxygen Light';
+	color:#FFF;
+	font-size:1.00em;
+	font-weight:bold;
+	outline:none;
+	cursor:pointer;
+}
+.glbl-bttnGrn:hover{
+	background-color:#138819;
+}
+
+/*Navigation*/
 #nav-wrapper{
 	position:fixed;
 	z-index:10;
@@ -92,12 +118,6 @@ p,a,td{
 	width:81px;
 	height:81px;
 }
-	.fa-location-arrow{
-		color:#119227;
-	}
-	.fa-location-arrow:hover{
-		color:#47C25C;
-	}
 #nav-item-cont{
 	position:absolute;
 	z-index:12;
@@ -186,25 +206,30 @@ p,a,td{
 			position:relative;
 			margin-top:0;
 			margin-right:16px;
+			border-left:solid 0px transparent;
+			border-right:solid 0px transparent;
+			box-shadow:0 0 0 1px transparent inset;
 			width:16px;
 			height:16px;
 			border-radius:100%;
 			display: inline-block;
-			background-color:#117716;
-		
-			border-left:solid 0px transparent;
-			border-right:solid 0px transparent;
-			box-shadow:0 0 0 1px transparent inset;
-
-			transition:all 0.441s ease-in-out;
+			background-color:#119227;
 		}
 		.nav-item:hover{
 			border-left:solid 2px #FFF;
 			border-right:solid 2px #FFF;
-			background-color:#3D8F42;
+			background-color:#47C25C;
 		}
 		.nav-item:hover:after{
 		    opacity:1.00;
+		}
+		.selected-nav{
+			background-color:transparent;
+			border:solid 1px #47C25C;
+			color:#000;
+		}
+		.nav-item p{
+			display:none;
 		}
 }
 
@@ -252,13 +277,6 @@ p,a,td{
 		    left:144%;
 		    bottom:0;
 		}
-		.selected-nav{
-			background-color:transparent;
-			border:solid 1px #FFF;
-			color:#000;
-			font-size:12px;
-		}
-
 
 	#nav-item-cont.navShow{
 		top:81px;

@@ -3,11 +3,12 @@
 <head>
 	<script src="js/jquery-2.1.3.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/modernizr.min.js"></script>
+<!--	<script src="js/modernizr.min.js"></script>
 	<script src="js/jquery.fullPage.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.autosize.min.js"></script>
-	<script src="js/jquery.countdown.js"></script>
+	<script src="js/jquery.countdown.min.js"></script>-->
+	<script src="js/pluginScript.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
@@ -24,7 +25,7 @@ $(function() {
     $('#l-countdown').countdown({
         date: endDate,
         render: function(data) {
-        $(this.el).html("<td class='time_countdown'>" + this.leadingZeros(data.days, 2) + "</td><td class='time_countdown'>" + this.leadingZeros(data.hours, 2) + "</td><td class='time_countdown'>" + this.leadingZeros(data.min, 2) + "</td><td class='time_countdown'>" +this.leadingZeros(data.sec, 2) + "</td>");
+        $(this.el).html("<td class='time_countdown glbl-para-desc'>" + this.leadingZeros(data.days, 2) + "</td><td class='time_countdown glbl-para-desc'>" + this.leadingZeros(data.hours, 2) + "</td><td class='time_countdown glbl-para-desc'>" + this.leadingZeros(data.min, 2) + "</td><td class='time_countdown glbl-para-desc'>" +this.leadingZeros(data.sec, 2) + "</td>");
         }
     });
 });
@@ -32,16 +33,16 @@ $(function() {
 <body>
 <div id="fullpage">
 	<header id="nav-wrapper">
-		<a id="nav-toggle-main" class="nav-toggle" href=""><i class="fa fa-location-arrow fa-3x" style="margin:9px"></i></a>
+		<a id="nav-toggle-main" class="nav-toggle" href=""><i class="fa fa-location-arrow fa-3x glbl-green-fa" style="margin:9px"></i></a>
 		<div id="nav-item-cont">
 			<a id="nav-toggle-close" class="nav-toggle" href="">x</a>
-			<a title="Home" class="nav-item tran400" href="#home">Home</a>
-			<a title="Portfolio" class="nav-item tran400" href="#portfolio">Portfolio</a>
+			<a title="Home" class="nav-item tran400" href="#home"><p>Home</p></a>
+			<a title="Portfolio" class="nav-item tran400" href="#portfolio"><p>Portfolio</p></a>
 			<!-- <a title="Updates" class="nav-item" href="#l-update">Updates</a> -->
-			<a title="Coming Soon!" class="nav-item anchorDisabled tran400" href="">Coming Soon!</a>
-			<a title="Coming Soon!" class="nav-item anchorDisabled tran400" href="">Coming Soon!</a>
-			<a title="Coming Soon!" class="nav-item anchorDisabled tran400" href="">Coming Soon!</a>
-			<a title="Contact" class="nav-item tran400" href="#contact">Contact</a>
+			<a title="Coming Soon!" class="nav-item anchorDisabled tran400" href=""><p>Coming Soon!</p></a>
+			<a title="Coming Soon!" class="nav-item anchorDisabled tran400" href=""><p>Coming Soon!</p></a>
+			<a title="Coming Soon!" class="nav-item anchorDisabled tran400" href=""><p>Coming Soon!</p></a>
+			<a title="Contact" class="nav-item tran400" href="#contact"><p>Contact</p></a>
 		</div>
 	</header>
 
@@ -55,21 +56,23 @@ $(function() {
 				<tr id="l-countdown"></tr>
 			</table>
 			<table id="l-status-info">
-				<tr id="l-cdowninfo"><td class="l-table-excep">Until next website update (portfolio, bug fixes, and promotions). Come back soon!</td></tr>
-				<tr id="l-promotions"><td class="l-table-excep">Good news! Since <a href="#home" class="tran400">Neonae</a> is relatively new, Neonae is offering <strong>free</strong> graphics work to the <a href="#contact" class="tran400">first 4 contacting clients! Promotion starts soon!</a> (See the above and <em>Updates</em> for timing details)</td></tr></table>
+				<tr id="l-cdowninfo"><td class="glbl-para-desc">Expected Next Website Update: 01 March 2015 23:59 PST Come back soon!<br>Updates: Portfolio (Message Left at 24 Feb 2015 23:25:37 PST)</td></tr>
+				<tr id="l-promotions"><td class="glbl-para-desc">Good news! Since <a href="#home" class="tran400 glbl-spclGrn-link">Neonae</a> is relatively new, Neonae is offering <strong>free</strong> graphics work to the <a href="#contact" class="tran400 glbl-spclGrn-link">first 4 contacting clients! Promotion starts soon!</a> (See the above and <em>Updates</em> for timing details)</td></tr></table>
 		</div>
-		<a id="l-update-toggle" class="" href=""><i class="fa fa-2x" style="color:#119227"></i></a><!--text: cycle through neonae green/neonae blue/neonae violet?-->
+		<a id="l-update-toggle" class="" href=""><i class="fa fa-2x glbl-green-fa"></i></a><!--text: cycle through neonae green/neonae blue/neonae violet?-->
 		<div id="l-update" class="tran400"><!--Change bg to translucent gray and white text -->
-			<p id="l-update-def-txt" style="margin-top:9px; text-align:center">To properly view this, please widen the window. more updates on 22 Feb 2015</p>
-			<div id="entry-1" class="l-update-info-wrapper"><h3 class="l-update-info-head"></h3><p class="l-update-info-text">Updates on 28 Feb 2015: Entry #1 for Neonae portfolio, styling updates for countdown timer, <em>hopefully some styling updates for other elements</em><br>22 Feb 2015 Updates: contact page update (styling)<br>MORE UPDATES TO COME on 20 February 2015. Major updates: navigation. Updates on 20 February 2015: bacgkround, update timer (at least)</p></div>
-			<!-- <div id="" class="l-update-info-wrapper"><h3 class="l-update-info-head">Entry # (Entry Date)</h3><p class="l-update-info-text">(description)</p></div> -->
-			<button  title="Download update history" type="button" id="download-button" class="tran400"></button><!--download update history-->
+			<p id="l-update-def-txt" style="margin-top:9px; text-align:center">To properly view this, please widen the window.</p>
+			<div id="entry-1" class="l-update-info-wrapper"><h3 class="l-update-info-head"></h3><p class="l-update-info-text">Updates on 28 Feb 2015: Entry #1 for Neonae portfolio, styling updates for countdown timer, <em>hopefully some styling updates for other elements</em><br>22 Feb 2015 Updates: contact page update (styling)<br>MORE UPDATES TO COME on 20 February 2015. Major updates: navigation. Updates on 20 February 2015: bacgkround, update timer (at least)</p>
+			<div id="l-dlU-bttn-cont"><a  id="l-dlU-bttn" class="tran400 glbl-bttnGrn" href="update.pdf" download="Neonae (Design) Updates"><i class="fa fa-download"></i> Download Update History</a></div>
+
+			</div>
+			<!-- <div id="" class="l-update-info-wrapper"><h3 class="l-update-info-head">Entry # (Entry Date)</h3><p class="l-update-info-text">(description)</p></div> --><!--download update history-->
 		</div>
 	</div>
 	
 	<div id="portfolio-temp-wrapper" class="section" style="background: url('imgs/bgtile2.png') repeat;">
 		<div class="wrapper">
-			<div class="project-cont slide">
+			<div id="projectZer" class="project-cont slide">
 				<div class="image">
 					<div class="image-slider">
 						<img class="image-slide" src="imgs/image-preview.jpg">
@@ -87,14 +90,15 @@ $(function() {
 						<h2 class="project-title">Neonae Website</h2>
 						<p class="project-description">Neonae website.</p>
 						<div class="project-buttons"><form>
-							<button type="button" id="" class="project-button tran400" onClick="" value="">Download Image Collage</button>
-							<button type="button" id="button-2" class="project-button tran400" onClick="" value="">Backstory</button>
+							<button type="button" id="" class="project-button tran400 glbl-bttnGrn" onClick="" value=""><i class="fa fa-download"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Download Image Collage</button>
+							<button type="button" id="button-2" class="project-button tran400 glbl-bttnGrn" onClick="" value="">Backstory</button>
 						</form></div>
 					</div>
 				</div>
 			</div>
+
 			<footer class="other-projects">
-				<a href="" class="footer-tab" style="text-align:center"><i class="fa fa-angle-up"></i></a>
+				<a href="" class="footer-tab" style="text-align:center"><i class="fa fa-angle-up glbl-green-fa"></i></a>
 				<div class="wrapper-with-margin">
 					<div id="other-proj-carousel-cont">
 						<div style="background-image:url('imgs/image-preview.png');background-position: center;background-size: auto 100%;box-sizing: border-box;"></div>
@@ -117,7 +121,7 @@ $(function() {
 		<div id="c-info-wrapper" class="contact-content">
 			<table>
 				<th colspan="2" style="color:#FFF;font-size:36px">Let's talk.</th>
-				<tr><td><a href="mailto:neonae@neonae.com"><i class="c-fa fa fa-envelope-o fa-2x"></i></td></a><td><a href="mailto:neonae@neonae.com">neonae@neonae.com</a></td></tr>
+				<tr><td><a href="mailto:neonae@neonae.com"><i class="c-fa fa fa-envelope-o fa-2x"></i></td></a><td><a href="mailto:neonae@neonae.com" class="tran400 glbl-spclGrn-link">neonae@neonae.com</a></td></tr>
 				<tr><td><i class="c-fa fa fa-phone fa-2x"></i></td><td>No private office, yet.</td></tr>
 				<tr><td><i class="c-fa fa fa-map-marker fa-2x"></i></td><td>No private office, yet.</td></tr>
 			</table><!--Use pseudo-elements to add in descriptions if the window gets wider. e.g. minimal width=icon+description available on tap (in description add in "tap to see"; otherwise display it outright+nice hover transitions-->
@@ -127,10 +131,11 @@ $(function() {
 			<input class="c-form-element c-form-text-element tran400" type="text" name="contact-name" placeholder="your name" required>
 			<input class="c-form-element c-form-text-element tran400"  type="email" name="contact-email" placeholder="your email address" required>
 			<textarea id="c-message" class="c-form-element c-form-text-element animated-textarea tran400" name="contact-email-body" placeholder="type your message C:" required></textarea>
-			<input class="c-form-element c-form-button tran121" type="button" value="send message"><!--Disabled for now-->
+			<input class="c-form-element c-form-button tran400" type="button" value="send message"><!--Disabled for now-->
 		</form>
+		<p class="contact-content glbl-para-desc">For the update schedule, please see <em>Updates</em> at the <a class="tran400 glbl-spclGrn-link" href="#home">home page</a>.</p>
 		<div id="c-footer">
-				<table>
+			<table>
 				<tr>
 					<td class="c-footer-link"><a href="" target="_blank"><i class="fa fa-behance fa-2x"></i></a></td>
 					<!--<td class="c-footer-link"><a href="" target="_blank"><i class="fa fa-pinterest fa-2x"></i></a></td>-->
@@ -140,10 +145,8 @@ $(function() {
 					<td class="c-footer-link"><a href="" target="_blank"><i></i></a></td>
 					<td class="c-footer-link"><a href="" target="_blank"><i></i></a></td> -->
 				</tr>
-				</table>
-			</div>
-
-			<p class="contact-content">For the update schedule, please see <em>Updates</em> at the <a class="tran400" href="#home">home page</a>.</p>
+			</table>
+		</div>
 	</div>
 
 </div>

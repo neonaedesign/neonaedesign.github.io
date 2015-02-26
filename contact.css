@@ -21,7 +21,6 @@
 		}
 		.fa-phone:hover{
 			color:#FE695D;
-
 		}
 		.fa-map-marker:hover{
 			color:#FF8A81;
@@ -121,17 +120,6 @@
 			color:#2AA9E0;
 		}
 
-#contact-wrapper p{
-	margin:0 auto;
-	text-align:center;
-	color:#FFF;
-}
-#contact-wrapper a{
-	color:#E1E1E1;
-}
-	#contact-wrapper a:hover{
-		color:#47C25C;
-	}
 @media (max-width:441px), (max-height:441px){
 	#contact-wrapper{
 	}

@@ -117,21 +117,7 @@ section {
 
 .project-button {
 	margin-bottom:9px;
-	border:none;
-	border-radius:4px;
-	padding:0.64em 0.81em;
-	background-color:#117716;
-	font-family:'Oxygen Light';
-	color:#FFF;
-	font-size:1.00em;
-	font-weight:bold;
-	outline:none;
-	cursor:pointer;
 }
-
-	.project-button:hover {
-		background-color:#138819;
-	}
 
 footer {
 	clear: both;
