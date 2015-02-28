@@ -1,0 +1,96 @@
+<html>
+<head>
+	<script src="js/jquery-1.8.1.min.js"></script>
+	<script src="js/html2canvas.js"></script>
+	<script src="js/stackBlur.js"></script>
+	<script>
+$(function(){
+            html2canvas($("body"), { 
+                onrendered: function(canvas) {
+                $("#blur").append(canvas);
+                $("canvas").attr("id","canvas");
+                    stackBlurCanvasRGB('canvas', 0, 0, $("canvas").width(), $("canvas").height(), 20);
+                }
+                
+            
+            });
+        })
+	</script>
+	<style type="text/css">
+		*{
+			margin:0 auto;
+		}
+		p,li{
+			margin-left:9px;
+		}
+			.lead-p{
+				margin-top:9px;
+			}
+
+		body{
+
+		}
+		#blur{
+			position:relative;
+			height:100%;
+			width:100%;top:0;
+		}
+		#enable-blur{
+			width:25px;
+			height:25px;
+			background-color:blue;
+			cursor:pointer;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="blur" style="z-index:10000"></div>
+
+	<div id="enable-blur"></div>
+
+	<p class="lead-p">Please see the sheet for some information</p>
+	<p class="lead-p">&nbsp;To-Read Reading list (inspired by two literature class assignments):</p>
+	<ul>
+		<li>Six Degress of Separation - John Guare</li>
+		<li>Slaughterhouse-Five - Kurt Vonnegut</li>
+		<li>Native Speaker - Chang-Rae Lee</li>
+		<li>Hocus Pocus - Kurt Vonnegut</li>
+		<li>Catch-22 - Joseph Heller</li>
+		<li>Proof - David Auburn</li>
+		<li>Art - Yasmina Reza</li>
+	</ul>
+	<p class="lead-p">&nbsp;Feb <br> (14 02 to 22 02)<p>
+	<ul>
+		<li>Discuss "Statistical Committee" idea with instructors to aid collecting statistical data for the administration and student-run organizations.</li>
+		<li>Increase efficiency through IndAs reports and other activities to train efficiency</li>
+		<li>Finish long-term school projects and assignments(econ project right after this)</li>
+		<li>Progress in 3 projects: this, that, and Fashion (new! as of 09 Feb)</li>
+		<li>Baking :) (not sure where to post the pics...maybe on this page?)</li>
+		<li>Continue extracurricular learning with discovered resources</li>
+		<li>Normalize sleep schedule: math is much easier this way :)</li>
+	</ul>
+	<p class="lead-p">&nbsp;229 230</p>
+	<ul>
+		<li>Tame a particular duality: periods of either rashness or indecisiveness</li>
+		<li>Visit relatives (probably my only opportunity for a while)</li>
+		<li>Solidify concepts I have procured in the last 4 years</li>
+		<li>Find work for graphic design and motion graphics</li>
+		<li>Keep up with scientific advancements (Nature)</li>
+		<li>Finish The Discoveries - Alan Lightman</li>
+		<li>Full fluency with CAD software</li>
+		<li>Normalize sleeping schedule</li>
+	</ul>
+
+	<p>come back for more on the Sunday the 1st of March!</p>
+	<img src="tempimg/IMG_0127comp.JPG" width="816" height="612">
+	<img src="tempimg/IMG_0131comp.JPG" width="816" height="612">
+	<img src="tempimg/IMG_0132comp.JPG" width="816" height="612">
+	<img src="tempimg/IMG_0153comp.JPG" width="816" height="612">
+	<img src="tempimg/IMG_0162comp.JPG" width="816" height="612">
+	<img src="tempimg/IMG_0168comp.JPG" width="816" height="612">
+	<p>come back for more on the Sunday the 1st of March!</p>
+</body>
+<script type="text/javascript">
+</script>
+</html>
