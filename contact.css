@@ -67,6 +67,9 @@
 		.c-form-text-element:focus{
 			border-bottom:solid 4px #119227;
 		}
+		.c-form-text-element:hover{
+			border-bottom:solid 1px #47C25C;
+		}
 		#c-message-wrapper [type="text"]{
 
 		}
@@ -77,12 +80,17 @@
 			border-top:dotted 1px #FFF;
 			text-align:left;
 			resize:none;
-
 		}
+			#c-message-wrapper textarea:focus{
+				border-top:dotted 1px #119227;
+			}
 		.c-form-button{
 			margin-top:1px;
 			border:solid 1px #FFF;
 			background:transparent;
+		}
+		.c-form-button:hover{
+			border-color: #47C25C;
 		}
 		.c-form-button:active{
 			border:solid 1px rgba(241,241,241,0.64);

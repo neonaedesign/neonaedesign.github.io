@@ -48,7 +48,8 @@ html,body{
 }
 .section{
 	z-index:1;
-}
+	background-image:url('../imgs/Neonae-Background-Website.png');
+	background-size:cover;}
 section{
 	z-index:0;
 }
@@ -70,12 +71,14 @@ p,a,td{
 .glbl-green-fa{
 	color:#119227;
 }
-.glbl-spclGrn-link{
-	color:#E1E1E1;
-
-}
-.glbl-green-fa:hover, .glbl-spclGrn-link:hover{
+.glbl-green-fa:hover{
 	color:#47C25C;
+}
+.glbl-spclGrn-link{
+	color:#47C25C;
+}
+.glbl-spclGrn-link:hover{
+	color:#E1E1E1;
 }
 .glbl-para-desc{
 	margin:0 auto;

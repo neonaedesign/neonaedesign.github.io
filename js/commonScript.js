@@ -4,7 +4,12 @@ var wWidth=$(window).width();
 var wHeight=$(window).height();
 var navCont=$('#nav-item-cont');
 $('.nav-toggle').click(function(event) {
-	event.preventDefault();
+	if($(this).text()=='x'||$(this).text()=='a'){
+		event.preventDefault();
+	}else{
+
+	}
+	// alert($(this).text());
 	if(wWidth<1141){
 		var newTop=(parseInt(navCont.css('top'))==0) ? -navCont.height() : 0;
 		navCont.animate({
@@ -37,6 +42,7 @@ var reaffirmStyle=function(){
 	}
 
 	if(wWidth<1141){
+		$('.nav-item').removeClass('nav-toggle');
 		if(navCont.hasClass('navShow')){
 			navCont.css({
 				top:0,
@@ -49,11 +55,14 @@ var reaffirmStyle=function(){
 			});
 		}
 	}else if((wWidth>=1141)&&(wWidth<1920)){
+		$('.nav-item').removeClass('nav-toggle');
+
 		navCont.css({
 			top:0,
 			left:0
 		})
 	}else{
+		$('.nav-item').removeClass('nav-toggle');
 		if(navCont.hasClass('navShow')){
 			navCont.css({
 				top:'81px',

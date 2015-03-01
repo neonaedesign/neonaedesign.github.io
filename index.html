@@ -21,7 +21,7 @@
 </head>
 <script type="text/javascript">
 $(function() {
-    var endDate = "February 28, 2015 23:59";    //Set release date
+    var endDate = "March 08, 2015 23:59";    //Set release date
     $('#l-countdown').countdown({
         date: endDate,
         render: function(data) {
@@ -33,36 +33,35 @@ $(function() {
 <body>
 <div id="fullpage">
 	<header id="nav-wrapper">
-		<a id="nav-toggle-main" class="nav-toggle" href=""><i class="fa fa-location-arrow fa-3x glbl-green-fa" style="margin:9px"></i></a>
+		<a id="nav-toggle-main" class="nav-toggle" href=""><i class="fa fa-location-arrow fa-3x glbl-green-fa" style="margin:9px"></i><p style="display:none">a</p></a>
 		<div id="nav-item-cont">
 			<a id="nav-toggle-close" class="nav-toggle" href="">x</a>
-			<a title="Home" class="nav-item tran400" href="#home"><p>Home</p></a>
-			<a title="Portfolio" class="nav-item tran400" href="#portfolio"><p>Portfolio</p></a>
+			<a title="Home" class="nav-item tran400 nav-toggle" href="#home"><p>Home</p></a>
+			<a title="Portfolio" class="nav-item tran400 nav-toggle" href="#portfolio"><p>Portfolio</p></a>
 			<!-- <a title="Updates" class="nav-item" href="#l-update">Updates</a> -->
-			<a title="Coming Soon!" class="nav-item anchorDisabled tran400" href=""><p>Coming Soon!</p></a>
-			<a title="Coming Soon!" class="nav-item anchorDisabled tran400" href=""><p>Coming Soon!</p></a>
-			<a title="Coming Soon!" class="nav-item anchorDisabled tran400" href=""><p>Coming Soon!</p></a>
-			<a title="Contact" class="nav-item tran400" href="#contact"><p>Contact</p></a>
+			<a title="Coming Soon!" class="nav-item anchorDisabled tran400 nav-toggle" href=""><p>Coming Soon!</p></a>
+			<a title="Coming Soon!" class="nav-item anchorDisabled tran400 nav-toggle" href=""><p>Coming Soon!</p></a>
+			<a title="Coming Soon!" class="nav-item anchorDisabled tran400 nav-toggle" href=""><p>Coming Soon!</p></a>
+			<a title="Contact" class="nav-item tran400 nav-toggle" href="#contact"><p>Contact</p></a>
 		</div>
 	</header>
 
-	<div id="landing-wrapper" class="section" style="background: url('imgs/bgtile2.png') repeat;">
+	<div id="landing-wrapper" class="section">
 		<div id="l-background" style=""> <!--possible video bg--></div>
 		<div id="l-info"><!--transparent bg; center justify; neonae svg,h neonae tag, timer-->
-			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 900 900" enable-background="new 0 0 900 900" xml:space="preserve"><g id="neonae_logo"><g id="top_e"><polygon points="663.667,438.252 663.667,381.763 802,301.7 663.667,222.023 663.667,165 900,301.7 		"/></g><g id="bottom_ne"><polygon points="49.433,714.5 0.433,714.5 0.433,303.45 237.716,166.454 475,303.45 475,549.151 663.284,657.857 900,521.25 
-			900,577.875 663.284,714.438 426,577.442 426,331.74 237.716,223.034 49.433,331.74 		"/></g></g>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 441 441" enable-background="new 0 0 441 441" xml:space="preserve"><g i:extraneous="self"><polyline points="228,158.2 119.2,95.4 10.4,158.2 10.4,279.2 26.4,279.2 26.4,167.4 119.2,113.8 212,167.4 212,283.8 320.8,346.6 429.6,283.8 429.6,265.3 320.8,328.1 228,274.5 228,158.2 		"/><polygon points="429.6,162.6 429.6,158.1 320.9,95.3 320.9,113.8 405.7,162.8 320.9,211.8 320.9,230.3 429.6,167.4 "/></g>
 			<h1 id="neonae_h1">neonae</h1>
 			<table id="l-status-cdown">
 				<tr id="l-countdown"></tr>
 			</table>
 			<table id="l-status-info">
-				<tr id="l-cdowninfo"><td class="glbl-para-desc">Expected Next Website Update: 01 March 2015 23:59 PST Come back soon!<br>Updates: Portfolio (Message Left at 24 Feb 2015 23:25:37 PST)</td></tr>
+				<tr id="l-cdowninfo"><td class="glbl-para-desc">Expected Next Website Update: 08 March 2015 23:59 PST Come back soon!<br>To the applicable institution: Check the link I sent with the Update Notes.<br>Updates: Mobile Navigation Modal bug fixes and design update; Neonae font</td></tr>
 				<tr id="l-promotions"><td class="glbl-para-desc">Good news! Since <a href="#home" class="tran400 glbl-spclGrn-link">Neonae</a> is relatively new, Neonae is offering <strong>free</strong> graphics work to the <a href="#contact" class="tran400 glbl-spclGrn-link">first 4 contacting clients! Promotion starts soon!</a> (See the above and <em>Updates</em> for timing details)</td></tr></table>
 		</div>
 		<a id="l-update-toggle" class="" href=""><i class="fa fa-2x glbl-green-fa"></i></a><!--text: cycle through neonae green/neonae blue/neonae violet?-->
 		<div id="l-update" class="tran400"><!--Change bg to translucent gray and white text -->
 			<p id="l-update-def-txt" style="margin-top:9px; text-align:center">To properly view this, please widen the window.</p>
-			<div id="entry-1" class="l-update-info-wrapper"><h3 class="l-update-info-head"></h3><p class="l-update-info-text">Updates on 28 Feb 2015: Entry #1 for Neonae portfolio, styling updates for countdown timer, <em>hopefully some styling updates for other elements</em><br>22 Feb 2015 Updates: contact page update (styling)<br>MORE UPDATES TO COME on 20 February 2015. Major updates: navigation. Updates on 20 February 2015: bacgkround, update timer (at least)</p>
+			<div id="entry-1" class="l-update-info-wrapper"><h3 class="l-update-info-head"></h3><p class="l-update-info-text">Updates on 28 Feb 2015: Portfolio entry (partial), new color scheme, new backgrond image<br>Updates on 28 Feb 2015: Entry #1 for Neonae portfolio, styling updates for countdown timer, <em>hopefully some styling updates for other elements</em><br>22 Feb 2015 Updates: contact page update (styling)<br>MORE UPDATES TO COME on 20 February 2015. Major updates: navigation. Updates on 20 February 2015: bacgkround, update timer (at least)</p>
 			<div id="l-dlU-bttn-cont"><a  id="l-dlU-bttn" class="tran400 glbl-bttnGrn" href="update.pdf" download="Neonae (Design) Updates"><i class="fa fa-download"></i> Download Update History</a></div>
 
 			</div>
@@ -70,12 +69,12 @@ $(function() {
 		</div>
 	</div>
 	
-	<div id="portfolio-temp-wrapper" class="section" style="background: url('imgs/bgtile2.png') repeat;">
+	<div id="portfolio-temp-wrapper" class="section">
 		<div class="wrapper">
 			<div id="projectZer" class="project-cont slide">
 				<div class="image">
 					<div class="image-slider">
-						<img class="image-slide" src="imgs/image-preview.jpg">
+						<img class="image-slide" src="imgs/Neonae-Entry-0-Cover-Page.png">
 						<img class="image-slide" src="imgs/image-preview.jpg">
 						<img class="image-slide" src="imgs/image-preview.jpg">
 					</div>
@@ -90,7 +89,7 @@ $(function() {
 						<h2 class="project-title">Neonae Website</h2>
 						<p class="project-description">Neonae website.</p>
 						<div class="project-buttons"><form>
-							<button type="button" id="" class="project-button tran400 glbl-bttnGrn" onClick="" value=""><i class="fa fa-download"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Download Image Collage</button>
+							<button type="button" id="" class="project-button tran400 glbl-bttnGrn" onClick="" value=""><i class="fa fa-download fa-fw" style="font-size:1.44em;"></i>&nbsp;&nbsp;&nbsp;Download Image Collage</button>
 							<button type="button" id="button-2" class="project-button tran400 glbl-bttnGrn" onClick="" value="">Backstory</button>
 						</form></div>
 					</div>
@@ -116,14 +115,14 @@ $(function() {
 		</div>
 	</div>
 
-	<div id="contact-wrapper" class="section" style="background: url('imgs/bgtile2.png') repeat;">
+	<div id="contact-wrapper" class="section">
 		<div id="c-background"></div><!--right now idk-->
 		<div id="c-info-wrapper" class="contact-content">
 			<table>
 				<th colspan="2" style="color:#FFF;font-size:36px">Let's talk.</th>
 				<tr><td><a href="mailto:neonae@neonae.com"><i class="c-fa fa fa-envelope-o fa-2x"></i></td></a><td><a href="mailto:neonae@neonae.com" class="tran400 glbl-spclGrn-link">neonae@neonae.com</a></td></tr>
 				<tr><td><i class="c-fa fa fa-phone fa-2x"></i></td><td>No private office, yet.</td></tr>
-				<tr><td><i class="c-fa fa fa-map-marker fa-2x"></i></td><td>No private office, yet.</td></tr>
+				<tr><td><i class="c-fa fa fa-map-marker fa-2x"></i></td><td>Cupertino, CA</td></tr>
 			</table><!--Use pseudo-elements to add in descriptions if the window gets wider. e.g. minimal width=icon+description available on tap (in description add in "tap to see"; otherwise display it outright+nice hover transitions-->
 			</ul>
 		</div>
