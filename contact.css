@@ -64,11 +64,11 @@
 			-moz-transition: all 0.441s;
 			transition: all 0.441s;
 		}
-		.c-form-text-element:focus{
-			border-bottom:solid 4px #119227;
-		}
 		.c-form-text-element:hover{
 			border-bottom:solid 1px #47C25C;
+		}
+		.c-form-text-element:focus{
+			border-bottom:solid 4px #119227;
 		}
 		#c-message-wrapper [type="text"]{
 
