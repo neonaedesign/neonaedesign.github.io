@@ -24,7 +24,7 @@ h2, p{
 	position: relative;
 }
 
-section {
+section {		/*transfer to commonStyles.css*/
 	overflow: auto;
 }
 
@@ -80,21 +80,21 @@ section {
 	opacity: 0;
 }
 
-.image-tab:hover {
-	background: #fff;
-	opacity: 0.121;
+.image-tab:hover{	/*Change bg to transparent?, opacity val*/
+	background:#FFF;
+	opacity:0.121;
 }
 
 .image-tab:active,
-.image-tab.selected {
-	background: #fff;
-	opacity: 0.4;
+.image-tab.selected{/*Change bg to transparent?, opacity val*/
+	background:#FFF;
+	opacity:0.4;
 }
 
 .project {
-	overflow: auto;
-	height: 100%;
-	position: relative;
+	position:relative;
+	height:100%;
+	overflow:auto;
 }
 
 .project-details {
@@ -111,7 +111,7 @@ section {
 }
 
 .project-buttons {
-	width: 100%;
+	width:100%;
 	background:transparent;
 }
 
@@ -120,7 +120,7 @@ section {
 }
 
 footer {
-	clear: both;
+	clear:both;
 	bottom:0;
 	background:rgba(196,196,196,0.81);
 }
@@ -182,31 +182,31 @@ footer {
 
 @media (min-width:1141px) and (max-width: 1919px) {
 	#header {
-		margin-top: 0;
+		margin-top:0;
 	}
 
 	.image {
-		width: 80%;
-		float: left;
+		float:left;
+		width:80%;
 	}
 
 	section {
-		position: relative;
+		position:relative;
 	}
 
 	.project {
-		width: 20%;
-		float: right;
-		position: absolute;
-		height: 100%;
-		right: 0;
-		bottom: 0;
-		top: 0;
+		position:absolute;
+		float:right;
+		top:0;
+		bottom:0;
+		right:0;
+		width:20%;
+		height:100%;
 	}
 
 	.project-buttons {
-		float: none;
-		clear: both;
+		float:none;
+		clear:both;
 		left:5%;
 		bottom: 0;
 	}
@@ -216,27 +216,26 @@ footer {
 		max-height:667px;
 	}
 }
-@media (max-width: 1920px){
-	section{
-		width: 100%;
-		overflow:visible;
+@media (max-width:1920px){
+	.footer-tab{
+		display:none;
 	}
 }
-@media (min-width: 1920px) {
+@media (min-width:1920px) {
 	.wrapper {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
 
 	}
 	.wrapper.footer-expand {
-		bottom: 200px;
+		bottom:200px;
 	}
 
 	footer.footer-expand {
-		//bottom: 0;
+		//bottom:0;
 	}
 
 	.wrapper,

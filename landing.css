@@ -2,11 +2,6 @@ html,body{
 	top:0;
 	overflow:hidden;
 }
-svg{
-	height:25%;
-	width:25%;
-	fill:#FFF;
-}
 .page{
 	position:absolute;
 	width:100%;
@@ -24,6 +19,7 @@ svg{
 	#l-info{
 		position:absolute;
 		z-index:0;
+		top:9%;
 		width:100%;
 		height:90%;
 
@@ -33,7 +29,6 @@ svg{
 		#neonae_h1{
 			font-family:'Oxygen';
 			font-size:1.44em;
-			color:#FFF;
 		}
 		#l-status-cdown, #l-status-info{
 			position:relative;
@@ -52,7 +47,7 @@ svg{
 		}
 
 
-	#l-update-toggle{
+/*	#l-update-toggle{
 		position:absolute;
 		z-index:1;
 		left:47.5%;
@@ -88,29 +83,29 @@ svg{
 			height:auto;
 			text-align:center;
 		}
-
+*/
+	#l-promo-tab{
+		position:absolute;
+		z-index:1;
+		margin-top:36px;
+		width:75%;
+		height:49px;
+	}
+		#l-promo-tab i{
+			font-size:0.81em;
+		}
+		#l-promo-tab table tbody tr td{
+			font-size:0.64em;
+		}
 
 @media (max-width: 1141px) {
 }
 
 @media (min-width:1141px){
-		#l-update-toggle{
-			left:95%;
-			top:47.5%;
-		}
-		#l-update{
-			top:0;
-			right:-25%;
-			width:25%;
-			height:100%;
-		}
-			.l-update-info-wrapper{
-				margin:9px 16px;
-				display:block;
-			}
-			.l-update-info-wrapper p{
-				margin-top:4px;
-			}
+	#l-promo-tab i,#l-promo-tab table tbody tr td{
+		font-size:1.00em;
+	}
+
 }
 
 @media (min-width:1141px) and (max-width: 1919px) {

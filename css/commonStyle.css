@@ -32,15 +32,37 @@
 	transition:all 0.400s ease-in-out;
 }
 .fa{
-	color:#FFF;
+	color:#119227;
 	-webkit-transition: color 0.361s ease-in-out;
 	-moz-transition: color 0.361s ease-in-out;
 	-o-transition: color 0.361s ease-in-out;
 	transition: color 0.361s ease-in-out;
 }
+	.fa-download{
+		color:#FFF;
+	}
+
+/*Insert custom animation*/
+@-webkit-keyframes flash{
+	from{color:#119227;}
+	to{color:#47C25C;}
+}
+@keyframes flash{
+	from{color:#119227;}
+	to{color:#47C25C;}
+}
+.glbl-flashing{
+	-webkit-animation:flash 1.44s ease-in-out infinite alternate;
+	animation:flash 1.44s ease-in-out infinite alternate;
+}
 
 /*Common Style Rules*/
 *{margin:0;border:0;padding:0;}
+svg{
+	height:36%;
+	width:36%;
+	fill:#000;
+}
 html,body{
 	background-color:rgb(241,241,241);
 	top:0;
@@ -48,7 +70,7 @@ html,body{
 }
 .section{
 	z-index:1;
-	background-image:url('../imgs/Neonae-Background-Website.png');
+	background-image:url('../imgs/ne-bg-march-final.jpg');
 	background-size:cover;}
 section{
 	z-index:0;
@@ -56,6 +78,7 @@ section{
 
 h1{
 	font-family:'Oxygen';
+	color:#000;
 }
 h2{
 	font-family:'Open Sans';
@@ -65,6 +88,7 @@ h3,th{
 }
 p,a,td{
 	font-family:'Oxygen Light';
+	color:#000;
 	text-decoration:none;
 }
 
@@ -75,15 +99,14 @@ p,a,td{
 	color:#47C25C;
 }
 .glbl-spclGrn-link{
-	color:#47C25C;
+	color:#119227;
 }
 .glbl-spclGrn-link:hover{
-	color:#E1E1E1;
+	color:#47C25C;
 }
 .glbl-para-desc{
 	margin:0 auto;
 	text-align:center;
-	color:#FFF;
 }
 .glbl-bttnGrn{
 	border:none;
@@ -157,7 +180,7 @@ p,a,td{
 		    z-index:98;
 		    padding:4px;
 		    width:64px;
-		    background:rgba(169,169,169,0.25);
+		    background:rgba(169,169,169,0.64);
 		    border-radius:5px;
 		    content:attr(title);
 		    font-family:'Oxygen Light';
@@ -170,7 +193,27 @@ p,a,td{
 	left:0;
 }
 
-
+#mobile-nav{
+	position:absolute;
+	z-index:3;
+	top:0;
+	width:100%;
+	height:100%;
+	pointer-events:none;
+}
+	.m-nav{
+		position:absolute;
+		right:25px;
+		width:16px;
+		height:16px;
+		pointer-events:auto;
+	}
+	#m-nav-up{
+		top:16px;
+	}
+	#m-nav-dwn{
+		bottom:16px;
+	}
 /*Common Responsive Media Queries*/
 @media (max-width:1141px) {
 	html{
@@ -244,7 +287,10 @@ p,a,td{
 }
 
 @media(max-width:1920px){
-
+	section{
+		width: 100%;
+		overflow:visible;
+	}
 }
 
 @media (min-width:1920px){
