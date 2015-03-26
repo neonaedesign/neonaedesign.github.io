@@ -1,0 +1,151 @@
+#contact-wrapper{
+}
+	.contact-content{
+		width:100%;
+	}
+
+#c-info-wrapper{
+	margin-top:25px;
+}
+	#c-info-wrapper table{
+		margin:0 auto;
+	}
+		#c-info-wrapper td{
+			padding-left:16px;
+			padding-bottom:9px;
+			text-align:center;
+		}
+		.fa-envelope-o:hover{
+			color:#E64437;
+		}
+		.fa-phone:hover{
+			color:#FE695D;
+		}
+		.fa-map-marker:hover{
+			color:#FF8A81;
+		}
+
+#c-message-wrapper{
+}
+	.c-form-element{
+		width:64%;
+		margin:9px auto;
+		text-align:center;
+		display:block;
+		outline:none;
+		font-family:'Oxygen';	/*Eventually change to Neonae Font*/
+		font-size:1.00em;
+		color:#000;
+	}
+		::-webkit-input-placeholder{
+			color:rgba(0,0,0,0.64);
+			font-style:italic;
+		}
+		:-moz-placeholder{
+			color:rgba(0,0,0,0.64);
+			font-style:italic;
+		}
+		::-moz-placeholder{
+			color:rgba(0,0,0,0.64);
+			font-style:italic;
+		}
+		:-ms-placeholder{
+			color:rgba(0,0,0,0.64);
+			font-style:italic;
+		}
+		.c-form-text-element{
+			border:none;
+			border-bottom:solid 1px #000;
+			background:transparent;
+			resize:none;
+			
+			-webkit-transition: all 0.441s;
+			-moz-transition: all 0.441s;
+			transition: all 0.441s;
+		}
+		.c-form-text-element:hover{
+			border-bottom:solid 1px #47C25C;
+		}
+		.c-form-text-element:focus{
+			border-bottom:solid 4px #119227;
+		}
+		#c-message-wrapper [type="text"]{
+
+		}
+		#c-message-wrapper [type="email"]{
+
+		}
+		#c-message-wrapper textarea{
+			border-top:dotted 1px #000;
+			text-align:left;
+			resize:none;
+		}
+			#c-message-wrapper textarea:focus{
+				border-top:dotted 1px #119227;
+			}
+		.c-form-button{
+			margin-top:1px;
+			outline:solid 1px #000;
+			background:transparent;
+		}
+		.c-form-button:hover{
+			border-color: #47C25C;
+		}
+		.c-form-button:active{
+			outline:solid 1px rgba(0,0,0,0.64);
+			color:rgba(0,0,0,0.64);
+		}
+
+#c-footer{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:9%;
+}
+	#c-footer table{
+		width:100%;
+		height:100%;
+		vertical-align:middle;
+	}
+		#c-footer td{
+			width:auto;
+			text-align:center;
+		}
+		.fa-behance{
+			color:#005CFF;
+		}
+		.fa-pinterest{
+			color:#CB2027;
+		}
+		.fa-facebook{
+			color:#3B5998;
+		}
+		.fa-google-plus{
+			color:#DC4A38;
+		}
+		.fa-twitter{
+			color:#2AA9E0;
+		}
+		.fa-behance:hover,.fa-pinterest:hover,.fa-facebook:hover,.fa-google-plus:hover,.fa-twitter:hover{
+			color:#119227;
+		}
+
+@media (max-width:441px), (max-height:441px){
+	#contact-wrapper{
+	}
+}
+
+@media (min-width:1141px){
+	.c-form-element{
+		width:64%;
+		font-size:1.44em;
+	}
+}
+
+@media (min-width:1141px and max-width:1919px){
+
+}
+
+@media (min-width:1920px){
+
+}
