@@ -1,4 +1,4 @@
-var isMobile==(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+var isMobile=(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
 var anim_ease='easeInOutCubic';
 /*Toggle navigation for all window sizes*/
 var wWidth=$(window).width();
