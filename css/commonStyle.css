@@ -193,8 +193,7 @@ button{
 	top:0;
 	left:0;
 }
-
-/*Common Responsive Media Queries*/
+/*Responsive Media Queries*/
 @media (max-width:1141px) {
 	html{
 		font-size:169%;
