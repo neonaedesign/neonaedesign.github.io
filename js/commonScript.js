@@ -1,4 +1,3 @@
-var isMobile=(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
 var anim_ease='easeInOutCubic';
 /*Toggle navigation for all window sizes*/
 var wWidth=$(window).width();
@@ -88,15 +87,15 @@ var reaffirmStyle=function(){
 		$('#nav-toggle-main i').removeClass('fa-3x').addClass('fa-4x');
 	}
 
-	if(isMobile&&wWidth<1141) {
-		$('.m-nav').show();
-	}else{
-		$('.m-nav').hide();
-	}
+	// if(isMobile&&wWidth<1141) {
+	// 	$('.m-nav').show();
+	// }else{
+	// 	$('.m-nav').hide();
+	// }
 
 	if(isMobile&&(wHeight>wWidth)){
 		$('#nav-toggle-main').hide();
-		$('.m-nav').hide();
+		// $('.m-nav').hide();
 		$('#mobile-correct').show();
 		$.fn.fullpage.moveTo(1);
 		$.fn.fullpage.setAllowScrolling(false);
