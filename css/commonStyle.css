@@ -194,27 +194,6 @@ button{
 	left:0;
 }
 
-#mobile-nav{
-	position:absolute;
-	z-index:3;
-	top:0;
-	width:100%;
-	height:100%;
-	pointer-events:none;
-}
-	.m-nav{
-		position:absolute;
-		right:25px;
-		width:16px;
-		height:16px;
-		pointer-events:auto;
-	}
-	#m-nav-up{
-		top:16px;
-	}
-	#m-nav-dwn{
-		bottom:16px;
-	}
 /*Common Responsive Media Queries*/
 @media (max-width:1141px) {
 	html{
