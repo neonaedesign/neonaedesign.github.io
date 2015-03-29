@@ -120,6 +120,7 @@ section {		/*transfer to commonStyles.css*/
 .project-button {
 	margin-bottom:9px;
 }
+	.button-a{color:#FFF;}
 
 footer {
 	position:absolute;
