@@ -1,22 +1,16 @@
+/*Integrate into commonStyles.css*/
+
 html,body {
 	width: 100%;
 	min-height: 100%;
 	background-color:rgb(241,241,241);
 	overflow:hidden;
 }
-h1{
-	font-family:'Oxygen';
-}
+
 h2, p{
 	margin:9px 0 9px 0;
 }
-	h2{
-		font-family:'Open Sans';
-	}
-	p{
-		font-family:'Oxygen Light';
-	} 
-
+/**/
 #section-name {
 	height: 81px;
 	line-height: 81px;
@@ -26,6 +20,9 @@ h2, p{
 
 section {		/*transfer to commonStyles.css*/
 	overflow: auto;
+}
+.slide{
+	position:relative;
 }
 
 .project-cont {
@@ -95,6 +92,7 @@ section {		/*transfer to commonStyles.css*/
 	position:relative;
 	height:100%;
 	overflow:auto;
+	pointer-events:none;
 }
 
 .project-details {
@@ -103,16 +101,20 @@ section {		/*transfer to commonStyles.css*/
 
 .project-title {
 	width:100%;
+	pointer-events:auto;
 }
 
 .project-description {
 	max-height:476px;
 	overflow-y:auto;
+	pointer-events:auto;
 }
 
 .project-buttons {
 	width:100%;
 	background:transparent;
+	pointer-events:auto;
+	cursor:pointer;
 }
 
 .project-button {
@@ -120,6 +122,8 @@ section {		/*transfer to commonStyles.css*/
 }
 
 footer {
+	position:absolute;
+	z-index:999;
 	clear:both;
 	bottom:0;
 	background:rgba(196,196,196,0.81);
@@ -170,10 +174,9 @@ footer {
 
 @media (min-width: 1141px) {
 	.project-button{
-		width:100%;
+		width:90%;
 
 	}
-
 	footer{
 		width:100%;
 		height:50%;
@@ -221,7 +224,7 @@ footer {
 		display:none;
 	}
 }
-@media (min-width:1920px) {
+@media screen and (min-width:1920px), handheld and (orientation:landscape){
 	.wrapper {
 		position:absolute;
 		top:0;
@@ -231,11 +234,11 @@ footer {
 
 	}
 	.wrapper.footer-expand {
-		bottom:200px;
+		bottom:0px;					/*Changed this from "200" to "0"*/
 	}
 
 	footer.footer-expand {
-		//bottom:0;
+		bottom:0px;					/*Fiddle w/ this*/
 	}
 
 	.wrapper,
@@ -266,7 +269,7 @@ footer {
 		left: 0;
 		right: 0;
 	}
-
+/*
 	#header {
 		position: fixed;
 		z-index: 2;
@@ -277,7 +280,7 @@ footer {
 		height: 100%;
 		display: block;
 		background: pink;
-	}
+	}*/
 
 	#section-header {
 		height: 100px;
@@ -293,6 +296,7 @@ footer {
 		bottom: -200px;
 		height: 200px;
 		max-height: 200px;
+		background:rgba(169,169,169,0.81);
 	}
 
 	.image {
@@ -337,6 +341,7 @@ footer {
 	}
 
 	.project-button {
+		width:90%;
 		display: block;
 	}
 	

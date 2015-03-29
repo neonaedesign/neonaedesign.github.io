@@ -1,4 +1,8 @@
 /*Import Fonts*/
+@font-face{
+	font-family:'Neonae Proto';
+	src:url(../fonts/Neonae-Official-Proto.otf);
+}
 @font-face{	
 	font-family:'Font Awesome';
 	src:url(fonts/fontawesome-webfont.woff);
@@ -15,10 +19,10 @@
 	font-family:'Open Sans Light';
 	src:url(fonts/OpenSans-Light.ttf);
 }
-@font-face{
+/*@font-face{
 	font-family:'Oxygen';
 	src:url(../fonts/Oxygen-Regular.ttf);
-}
+} Subject to delete*/
 @font-face{
 	font-family:'Oxygen Light';
 	src:url(../fonts/Oxygen-Light.ttf);
@@ -32,17 +36,15 @@
 	transition:all 0.400s ease-in-out;
 }
 .fa{
-	color:#119227;
-	-webkit-transition: color 0.361s ease-in-out;
-	-moz-transition: color 0.361s ease-in-out;
-	-o-transition: color 0.361s ease-in-out;
-	transition: color 0.361s ease-in-out;
+	color:#FFF;
+	-webkit-transition: all 0.361s ease-in-out;
+	-moz-transition: all 0.361s ease-in-out;
+	-o-transition: all 0.361s ease-in-out;
+	transition: all 0.361s ease-in-out;
 }
-	.fa-download{
-		color:#FFF;
-	}
+	.fa-gift{color:#119227;}.fa-refresh{color:#000;}
 
-/*Insert custom animation*/
+/*Custom Animations*/
 @-webkit-keyframes flash{
 	from{color:#119227;}
 	to{color:#47C25C;}
@@ -58,11 +60,7 @@
 
 /*Common Style Rules*/
 *{margin:0;border:0;padding:0;}
-svg{
-	height:36%;
-	width:36%;
-	fill:#000;
-}
+
 html,body{
 	background-color:rgb(241,241,241);
 	top:0;
@@ -83,13 +81,16 @@ h1{
 h2{
 	font-family:'Open Sans';
 }
-h3,th{
+/*h3,th{
 	font-family:'Oxygen'
-}
+} Subject to delete*/
 p,a,td{
 	font-family:'Oxygen Light';
 	color:#000;
 	text-decoration:none;
+}
+button{
+	
 }
 
 .glbl-green-fa{
@@ -124,7 +125,7 @@ p,a,td{
 	background-color:#138819;
 }
 
-/*Navigation*/
+/*Specific Style Rules*/
 #nav-wrapper{
 	position:fixed;
 	z-index:10;
@@ -154,9 +155,9 @@ p,a,td{
 }
 	#nav-toggle-close{
 		top:0;
+		margin-right:36px;
 		float:right;
 		font-size:24px;
-
 		color:#3D8F42;
 	}
 	.nav-item{
@@ -280,8 +281,11 @@ p,a,td{
 }
 
 @media (min-width:1141px) and (max-width:1919px){
+	.nav-item{
+		margin-top:4px;
+	}
 	.nav-item:hover:after{
-	    bottom:-169%;
+	    bottom:-196%;
 	    left:-144%;
 	}
 }

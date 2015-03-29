@@ -1,0 +1,28 @@
+#prototype-wrapper div{
+	background-image:url('imgs/neonae-under-construction-page.png');
+	background-size:cover;
+		background-repeat:no-repeat;
+}
+
+@media (max-width:1141px){
+}
+
+@media (min-width:1141px){
+}
+
+@media (min-width:1141px) and (max-width:1919px){
+}
+
+@media(max-width:1920px){
+}
+
+@media (min-width:1920px){
+	#prototype-wrapper div{
+		background-size:100% 100%;
+		background-repeat:no-repeat;
+	}
+}
+
+@media (max-width:630px){
+
+}

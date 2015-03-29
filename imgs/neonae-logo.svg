@@ -1,0 +1,81 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="" width="" viewBox="0 0 676 676"
+ enable-background="new 0 0 676 676" xml:space="preserve">
+<g id="ne-logo">
+	<polygon id="ne-logo-bot" points="27.2,431.4 27.2,252 176.2,166 325.2,252 325.2,438.8 499.8,539.6 674.5,438.9 674.5,409.1 499.9,509.9 350.9,424 350.9,237.2 176.2,136.3 1.5,237.2 1.5,431.4"/>
+	<polygon id="ne-logo-eTop" points="499.9,136.3 674.5,237.1 674.5,251.9 499.9,352.9 499.9,323.2 635.9,244.6 499.9,166"/>
+</g>
+<defs>
+	<style type="text/css">
+		@-webkit-keyframes dash{
+			50%{
+				stroke-dashoffset:196;
+			}
+		}
+		@-moz-keyframes dash{
+			50%{
+				stroke-dashoffset:196;
+			}
+		}
+		@-o-keyframes dash{
+			50%{
+				stroke-dashoffset:196;
+			}
+		}
+
+		@keyframes dash{
+			50%{
+				stroke-dashoffset:196;
+			}
+		}
+
+		#ne-logo-eTop, #ne-logo-bot{
+			fill:transparent;stroke:#000;stroke-width:4px;
+			stroke-dasharray:196, 9, 9, 9;
+			stroke-dashoffset:0;
+			-webkit-transition: all 900ms ease-in-out;
+			-moz-transition;all 900ms ease-in-out;
+			-o-transition:all 900ms ease-in-out;
+			transition: all 900ms ease-in-out;
+			-webkit-animation:dash 1296ms ease-in-out infinite;
+			-moz-animation:dash 1296ms ease-in-out infinite;
+			-o-animation:dash 1296ms ease-in-out infinite;
+			animation:dash 1296ms ease-in-out infinite;
+		}
+
+		#ne-logo-bot.svgSolid,#ne-logo-eTop.svgSolid{
+			stroke-dasharray:2401;
+			stroke-dashoffset:0;
+			stroke:#119227;
+			-webkit-animation:null;-moz-animation:null;-o-animation:null;animation:null;
+		}
+
+		#ne-logo-bot.svgHover,#ne-logo-eTop.svgHover{
+			fill:#119227;
+		}
+
+	</style>
+	<script type="text/javascript">
+		var l_main=document.querySelector('#ne-logo');var l_top=document.querySelector('#ne-logo-eTop');var l_bot=document.querySelector('#ne-logo-bot');
+		var className="solid";var topClass=document.getElementById('ne-logo-eTop');var botClass=document.getElementById('ne-logo-bot');
+
+		l_main.onmouseover=function(){
+			<!-- l_top.classList.add('svgHover');
+			l_bot.classList.add('svgHover'); -->
+			l_top.classList.remove('svgSolid');
+			l_bot.classList.remove('svgSolid');
+		}
+		l_main.onmouseout=function(){<!-- 
+			l_top.classList.remove('svgHover');
+			l_bot.classList.remove('svgHover'); -->
+			l_top.classList.add('svgSolid');
+			l_bot.classList.add('svgSolid');
+		}
+		window.onload=function(){
+			setTimeout(function(){
+				l_bot.setAttribute('class','svgSolid');
+				l_top.setAttribute('class','svgSolid');
+			},2401)
+		}
+	</script>
+</defs>
+</svg>

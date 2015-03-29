@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+	<noscript>
+		<meta http-equiv="refresh" content="0;url=http://www.neonae.com/no-script">
+	</noscript>
 	<script src="js/jquery-2.1.3.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 <!--	<script src="js/modernizr.min.js"></script>
@@ -9,26 +13,37 @@
 	<script src="js/jquery.autosize.min.js"></script>
 	<script src="js/jquery.countdown.min.js"></script>-->
 	<script src="js/pluginScript.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
 	<link rel="stylesheet" type="text/css" href="css/commonStyle.css">
 
+	<link rel="shortcut icon" href="imgs/neonae-logo.ico">
 	<title>Neonae</title>
-	<meta name="description" content="">
-	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+	<meta name="description" content="Neonae is a graphics agency that furnishes its clients with product(s) that resonate a piece of its organizational identity.">
+	<meta name="keywords" content="Neonae, graphics, graphic design, web design, corporate identity, mobile website development">
 </head>
 <script type="text/javascript">
-	// $(function(){
-	// 	html2canvas($('body'),{
-	// 		onrendered:function(canvas){
-	// 			$('#b-background').append(canvas);
-	// 			$('canvas').attr('id','canvas');
-	// 			stackblurCanvasRGB('canvas',0,0,$('canvas').width(),$('canvas').height(),9);
-	// 		}
-	// 	});
-	// })
+	$(function(){
+		html2canvas($('body'),{
+			onrendered:function(canvas){
+				$('#b-background').append(canvas);
+				$('canvas').attr('id','canvas');
+				stackblurCanvasRGB('canvas',0,0,$('canvas').width(),$('canvas').height(),9);
+			}
+		});
+	})
+	$(function() {
+	    var endDate = "April 25, 2015 11:59";
+	    $('#prototype-countdown tr').countdown({
+	        date: endDate,
+	        render: function(data) {
+	        $(this.el).html("<td style='width:25%'>"+this.leadingZeros(data.days,2)+"</td><td style='width:25%'>"+this.leadingZeros(data.hours,2)+"</td><td style='width:25%'>"+this.leadingZeros(data.min,2)+"</td><td style='width:25%'>"+this.leadingZeros(data.sec,2)+"</td>");
+	        }
+	    });
+	});
 </script>
 <body>
 <div id="fullpage">
@@ -37,15 +52,15 @@
 		<div id="nav-item-cont">
 			<a id="nav-toggle-close" class="nav-toggle" href="">x</a>
 			<a title="Home" class="nav-item tran400" href="#home"><p>Home</p></a>
-			<a title="Portfolio" class="nav-item tran400 nav-toggle" href="#portfolio"><p>Portfolio</p></a>
+			<a title="Portfolio" class="nav-item tran400" href="#portfolio"><p>Portfolio</p></a>
 			<!-- <a title="Updates" class="nav-item" href="#l-update">Updates</a> -->
-			<a title="Coming Soon!" class="nav-item anchorDisabled tran400" href=""><p>Coming Soon!</p></a>
-			<a title="Coming Soon!" class="nav-item anchorDisabled tran400" href=""><p>Coming Soon!</p></a>
+<!-- 			<a title="Coming Soon!" class="nav-item tran400" href=""><p>Coming Soon!</p></a>
+			<a title="Coming Soon!" class="nav-item tran400" href=""><p>Coming Soon!</p></a> -->
+			<a title="Prototype - Coming Soon!" class="nav-item tran400" href="#prototype"><p>Prototype - Coming Soon!</p></a>
 			<a title="Coming Soon!" class="nav-item anchorDisabled tran400" href=""><p>Coming Soon!</p></a>
 			<a title="Contact" class="nav-item tran400" href="#contact"><p>Contact</p></a>
 		</div>
 	</header>
-
 	<div id="mobile-nav">
 		<div id="m-nav-up" class="m-nav">
 			<i class="fa fa-angle-double-up glbl-flashing"></i>
@@ -55,34 +70,23 @@
 		</div>
 	</div>
 
-	<div id="b-background"></div> <!--Blur Background-->
+	<table id="mobile-correct" style="position:absolute;z-index:1001;width:100%;height:100%;text-align:center;vertical-align:middle;background-color:#FFF;display:none;"><td style="color:#000"><object><embed style="margin:auto 42%;width:16%;height:16%;" src="imgs/neonae-logo.svg"></object>Please Change Screen Orientation<br><br><i class="fa fa-refresh fa-spin fa-4x"></i></td></table>
+	<div id="b-background"style="position:absolute;z-index:1000;width:100%;height:100%;pointer-events:none;"></div> <!--Blur Background-->
 
 	<div id="landing-wrapper" class="section">
 		<div id="l-background" style=""> <!--possible video bg--></div>
 		<div id="l-info"><!--transparent bg; center justify; neonae svg,h neonae tag, timer-->
-			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 441 441" enable-background="new 0 0 441 441" xml:space="preserve"><g i:extraneous="self"><polyline points="228,158.2 119.2,95.4 10.4,158.2 10.4,279.2 26.4,279.2 26.4,167.4 119.2,113.8 212,167.4 212,283.8 320.8,346.6 429.6,283.8 429.6,265.3 320.8,328.1 228,274.5 228,158.2 		"/><polygon points="429.6,162.6 429.6,158.1 320.9,95.3 320.9,113.8 405.7,162.8 320.9,211.8 320.9,230.3 429.6,167.4 "/></g>
-			<h1 id="neonae_h1">neonae</h1>
+			<object><embed id="svg-logo" src="imgs/neonae-logo.svg"></object>
+			<h1 id="neonae-h1">neonae</h1>
 		</div>
 
 		<div id="l-promo-tab" class="l-tab">
 			<table style="position:relative;margin:auto;height:100%;vertical-align:middle;text-align:center;">
 <!-- 				<tr class="l-promo-modal"><td><i class="fa fa-gift"></i></td></tr> -->
-				<tr class="l-promo-window"><td style="position:relative;left:-9%;"><i id="l-tab-arrow" class="fa fa-chevron-left fa-3x glbl-flashing" style="cursor:pointer;"></i></td>
+				<tr class="l-promo-window"><td style="position:relative;left:-9%;"><i id="l-tab-arrow" class="fa fa-chevron-left fa-2x glbl-flashing" style="cursor:pointer;"></i></td>
 				<td><i class="fa fa-gift"></i>&nbsp;&nbsp;&nbsp;&nbsp;Promotion: See <a href="#contact" class="glbl-spclGrn-link tran400">details here</a>.</td></tr>
 			</table>
 		</div>
-
-
-
-
-
-
-
-
-
-		<!--DELETE-->
-		
-		<!--DELETE-->
 	</div>
 	
 	<div id="portfolio-temp-wrapper" class="section">
@@ -90,9 +94,34 @@
 			<div id="project0" class="project-cont slide" data-anchor="slide-1">
 				<div class="image">
 					<div class="image-slider">
-						<img class="image-slide" src="imgs/Neonae-Entry-0-Cover-Page.png">
-						<img class="image-slide" src="imgs/image-preview.jpg">
-						<img class="image-slide" src="imgs/image-preview.jpg">
+						<img class="image-slide" src="imgs/Neonae-Entry-0-Cover-Page.jpg">
+						<img class="image-slide" src="imgs/image-preview.png">
+						<img class="image-slide" src="imgs/image-preview.png">
+					</div>
+					<div class="image-navigator">
+						<a class="image-tab tran400" href=""></a>
+						<a class="image-tab tran400" href=""></a>
+						<a class="image-tab tran400" href=""></a>
+					</div>
+				</div>
+				<div class="project">
+					<div class="project-details">
+						<h2 class="project-title">Neonae Website</h2>
+						<p class="project-description">&nbsp;&nbsp;&nbsp;Though the Neonae was established in late September &mdash;September 20 &mdash;in 2014, the concept of Neonae was conceived of long before: Fall 2013 &mdash;September 23rd.<br>&nbsp;&nbsp;&nbsp;Since the first line of code was written on the 20th of December in 2014, the website has slowly inched toward completion until the 29th of March, 2015. Neonae would like to offer <a class="glbl-spclGrn-link tran400" href="http://www.cjameszhang.com/">James Zhang</a> special thanks for offering his coding and consulting services.<br>&nbsp;&nbsp;&nbsp;Designed by Neonae in California.</p>
+						<div class="project-buttons"><form>
+							<button type="button" id="" class="project-button tran400 glbl-bttnGrn" onClick="" value=""><i class="fa fa-download fa-fw fa-button-icon" style="font-size:1.21em;"></i>&nbsp;&nbsp;Download Image</button>
+							<a href="http://www.cjameszhang.com/"><button id="button-2" class="project-button tran400 glbl-bttnGrn" onClick="" value=""><i class="fa fa-external-link fa-fw fa-button-icon" style="font-size:1.21em;"></i>&nbsp;&nbsp;Special Credits</button></a>
+						</form></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="project1" class="project-cont slide" data-anchor="slide-2">
+				<div class="image">
+					<div class="image-slider">
+						<img class="image-slide" src="imgs/image-preview.png">
+						<img class="image-slide" src="imgs/image-preview.png">
+						<img class="image-slide" src="imgs/image-preview.png">
 					</div>
 					<div class="image-navigator">
 						<a class="image-tab tran400" href=""></a>
@@ -105,44 +134,19 @@
 						<h2 class="project-title">Neonae Website</h2>
 						<p class="project-description">Neonae website.</p>
 						<div class="project-buttons"><form>
-							<button type="button" id="" class="project-button tran400 glbl-bttnGrn" onClick="" value=""><i class="fa fa-download fa-fw" style="font-size:1.44em;"></i>&nbsp;&nbsp;&nbsp;Download Image Collage</button>
+							<button type="button" id="" class="project-button tran400 glbl-bttnGrn" onClick="" value=""><i class="fa fa-download fa-fw" style="font-size:1.44em;"></i>&nbsp;&nbsp;&nbsp;Download Image</button>
 							<button type="button" id="button-2" class="project-button tran400 glbl-bttnGrn" onClick="" value="">Backstory</button>
 						</form></div>
 					</div>
 				</div>
 			</div>
 
-	<!-- 		<div id="project1" class="project-cont slide" data-anchor="slide-2">
-				<div class="image">
-					<div class="image-slider">
-						<img class="image-slide" src="imgs/Neonae-Entry-0-Cover-Page.png">
-						<img class="image-slide" src="imgs/image-preview.jpg">
-						<img class="image-slide" src="imgs/image-preview.jpg">
-					</div>
-					<div class="image-navigator">
-						<a class="image-tab tran400" href=""></a>
-						<a class="image-tab tran400" href=""></a>
-						<a class="image-tab tran400" href=""></a>
-					</div>
-				</div>
-				<div class="project">
-					<div class="project-details">
-						<h2 class="project-title">Neonae Website</h2>
-						<p class="project-description">Neonae website.</p>
-						<div class="project-buttons"><form>
-							<button type="button" id="" class="project-button tran400 glbl-bttnGrn" onClick="" value=""><i class="fa fa-download fa-fw" style="font-size:1.44em;"></i>&nbsp;&nbsp;&nbsp;Download Image Collage</button>
-							<button type="button" id="button-2" class="project-button tran400 glbl-bttnGrn" onClick="" value="">Backstory</button>
-						</form></div>
-					</div>
-				</div>
-			</div>
- -->
 			<footer class="other-projects">
 				<a href="" class="footer-tab" style="text-align:center"><i class="fa fa-angle-up fa-2x glbl-green-fa glbl-flashing"></i></a>
 				<div class="wrapper-with-margin">
 					<div id="other-proj-carousel-cont">
-						<div style="background-image:url('imgs/image-preview.png');background-position: center;background-size: auto 100%;box-sizing: border-box;"></div>
-						<div></div>
+						<a href="#portfolio"><div style="background-image:url('imgs/image-preview.png');background-position: center;background-size: auto 100%;box-sizing: border-box;"></div></a>
+						<a href="#portfolio/slide-2"><div></div></a>
 						<div></div>
 						<div></div>
 						<div></div>
@@ -156,32 +160,41 @@
 		</div>
 	</div>
 
+	<div id="prototype-wrapper" class="section" style="z-index:1;background-color:#FFF;background-image:none;">
+		<div style="height:100%;width:100%;">
+			<table id="prototype-countdown" style="height:100%;width:100%;vertical-align:middle;text-align:center;font-size:1.44em;"><tr></tr></table>
+		</div>
+	</div>
+
 	<div id="contact-wrapper" class="section">
 		<div id="c-background"></div><!--right now idk-->
-		<div id="c-info-wrapper" class="contact-content">
-			<table>
-				<th colspan="2" style="font-size:36px">Let's talk.</th>
-				<tr><td><a href="mailto:neonae@neonae.com"><i class="c-fa fa fa-envelope-o fa-2x"></i></td></a><td><a href="mailto:neonae@neonae.com" class="tran400 glbl-spclGrn-link">neonae@neonae.com</a></td></tr>
-				<tr><td><i class="c-fa fa fa-phone fa-2x"></i></td><td>No private office, yet.</td></tr>
-				<tr><td><i class="c-fa fa fa-map-marker fa-2x"></i></td><td>Cupertino, CA</td></tr>
-			</table><!--Use pseudo-elements to add in descriptions if the window gets wider. e.g. minimal width=icon+description available on tap (in description add in "tap to see"; otherwise display it outright+nice hover transitions-->
-			</ul>
-		</div>
-		<form id="c-message-wrapper" class="contact-content">
-			<input class="c-form-element c-form-text-element tran400" type="text" name="contact-name" placeholder="your name" required>
-			<input class="c-form-element c-form-text-element tran400"  type="email" name="contact-email" placeholder="your email address" required>
-			<textarea id="c-message" class="c-form-element c-form-text-element animated-textarea tran400" name="contact-email-body" placeholder="type your message C:" required></textarea>
-			<input class="c-form-element c-form-button tran400" type="button" value="send message"><!--Disabled for now-->
-		</form>
-		<p class="contact-content glbl-para-desc">As said on the <em>promotions tab</em> (part of the <a class="tran400 glbl-spclGrn-link" href="#home">home page</a>), Neonae is willing to .</p>
+			<table id="c-info-wrapper" class="c-content">
+				<tr id="c-info-shrink-cont"><td><div>
+				<a href="mailto:neonae@neonae.com" id="c-spcl-email" class="tran400 glbl-spclGrn-link">neonae@neonae.com</a><br><br>
+				<p class="c-bold">West Coast</p><p>not yet available</p><p>Cupertino, CA</p><p>+1 (408) abc defg</p><p><a href="" class="tran400 glbl-spclGrn-link c-other-email">no separate email yet</a></p>
+				<br><p class="c-bold">Midwest</p><p>not yet available</p><p>Urbana, IL</p><p>+1 (217) hij klmn</p><p><a href="" class="tran400 glbl-spclGrn-link c-other-email">no separate email yet</a></p><br>
+				<p class="c-bold">East Coast</p><p>not yet available</p><p>MA?</p><p>+1 (opq) rst uvwx</p><p><a href="" class="tran400 glbl-spclGrn-link c-other-email">no separate email yet</a></p>
+				</div></td></tr>
+			</table>
+		<table id="c-message-wrapper" class="c-content"><td>
+			<form>
+				<input class="c-form-element c-form-text-element tran400" type="text" name="contact-name" placeholder="my name is..." required>
+				<input class="c-form-element c-form-text-element tran400"  type="email" name="contact-email" placeholder="my email is..." required>
+				<textarea id="c-message" class="c-form-element c-form-text-element animated-textarea tran400" name="contact-email-body" placeholder="my message is..." required></textarea>
+				<div class="c-form-element"><button id="c-form-button-send" class="glbl-bttnGrn tran400 c-form-button" type="submit"><i class='fa fa-paper-plane-o'></i> send message</button><button id="c-form-button-share" class="glbl-bttnGrn tran400 c-other-email" type="submit"><i class='fa fa-share-alt'></i> share</button></div>
+			</form>
+		</td></table>
+		<p class="contact-content glbl-para-desc"><a class="tran400 glbl-spclGrn-link" href="#home"></a></p>
 		<div id="c-footer">
 			<table>
 				<tr>
-					<td class="c-footer-link"><a href="" target="_blank"><i class="fa fa-behance fa-2x"></i></a></td>
+					<td class="c-footer-link"><a href="https://www.behance.net/neonae" target="_blank"><i class="fa fa-behance fa-2x tran400"></i></a></td>
+					<td class="c-footer-link"><a href="https://www.facebook.com/neonaedesign" target="_blank"><i class="fa fa-facebook fa-2x tran400"></i></a></td>
+					<!-- <td class="c-footer-link"><a href="behance.com/" target="_blank"><image class="svg-link" src="imgs/behance.svg"></a></td> -->
 					<!--<td class="c-footer-link"><a href="" target="_blank"><i class="fa fa-pinterest fa-2x"></i></a></td>-->
-					<td class="c-footer-link"><a href="" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></td>
+					<!-- <td class="c-footer-link"><a href="facebook.com/" target="_blank"><object><embed class="svg-link" src="imgs/facebook.svg"></object>b</a></td> -->
 					<!-- <td class="c-footer-link"><a href="" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a></td> -->
-					<td class="c-footer-link"><a href="" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></td><!-- 
+					<!-- <td class="c-footer-link"><a href="twitter.com/" target="_blank"><object><embed class="svg-link" src=""></object></a></td> --><!-- 
 					<td class="c-footer-link"><a href="" target="_blank"><i></i></a></td>
 					<td class="c-footer-link"><a href="" target="_blank"><i></i></a></td> -->
 				</tr>
@@ -196,6 +209,7 @@
 		var errorMessage='Well this is embarassing...\nYour message did not go through. Please, in the meantime, directly contact us through our email: "neonae@neonae.com"';
 		$('.c-form-button').click(function(){alert(errorMessage);});
 		$('.anchorDisabled').click(function(event){event.preventDefault();alert('Coming Soon!')});
+		$('.c-other-email').click(function(event){event.preventDefault();alert('Not yet available!')});
 	</script>
 	<script src="js/commonScript.js"></script>
 	<script src="landing.js"></script>
@@ -203,5 +217,6 @@
 	<script src="contact.js"></script>
 	<link rel="stylesheet" type="text/css" href="landing.css">
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
+	<link rel="stylesheet" type="text/css" href="prototype.css">
 	<link rel="stylesheet" type="text/css" href="contact.css">
 </html>

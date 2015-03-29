@@ -8,6 +8,15 @@ html,body{
 	height:100%;
 }
 
+#svg-logo{
+	width:36%;
+	height:36%;
+}
+#neonae-h1{
+	font-family:'Neonae Proto', Sans-Serif;
+}
+
+
 #landing-wrapper{
 	top:0;
 }

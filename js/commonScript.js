@@ -1,34 +1,37 @@
-var anim_ease='easeInOutCubic'
+var anim_ease='easeInOutCubic';
 /*Toggle navigation for all window sizes*/
 var wWidth=$(window).width();
 var wHeight=$(window).height();
 var navCont=$('#nav-item-cont');
-$('.nav-toggle').click(function(event) {
-	if($(this).text()=='x'||$(this).text()=='a'){
-		event.preventDefault();
-	}
-	// alert($(this).text());
+var navigationClick=function(){
 	if(wWidth<1141){
 		var newTop=(parseInt(navCont.css('top'))==0) ? -navCont.height() : 0;
 		navCont.animate({
 			top:newTop+'px'
 		},400,anim_ease)
 	}else if((wWidth>=1141)&&(wWidth<1920)){
-
 	}else{
 		var newLeft=(parseInt(navCont.css('left'))==0) ? -navCont.width() : 0;
-		/*console.log("Left: "+newLeft+", Has Class: "+navCont.has('navShow'));*/
 		navCont.animate({
 			left:newLeft+'px'
 		},400,anim_ease);
 	}
 	if(wWidth<1141){
 		navCont.toggleClass('navShow');
-		console.log('afd');
 	}else{}
 	reaffirmStyle();
-	console.log('fired');
+}
+
+$('.nav-toggle').click(function(event) {
+	event.preventDefault();
+	navigationClick();
 });
+$('.nav-item').click(function(event){
+	if(wWidth<1141){
+		navigationClick();
+	}
+});
+
 
 var reaffirmStyle=function(){
 	wWidth=$(window).width();
@@ -85,7 +88,31 @@ var reaffirmStyle=function(){
 		});
 		$('#nav-toggle-main i').removeClass('fa-3x').addClass('fa-4x');
 	}
+
+	if(isMobile&&wWidth<1141) {
+		$('.m-nav').show();
+	}else{
+		$('.m-nav').hide();
+	}
+
+	if(isMobile&&(wHeight>wWidth)){
+		$('#nav-toggle-main').hide();
+		$('.m-nav').hide();
+		$('#mobile-correct').show();
+		$.fn.fullpage.moveTo(1);
+		$.fn.fullpage.setAllowScrolling(false);
+	}else{
+		$('#mobile-correct').hide();
+		$.fn.fullpage.setAllowScrolling(true);
+	}
+
+	if(($('#nav-item-cont').hasClass('navShow'))&&(wWidth<1141)){
+		$('#b-background').fadeIn(400);
+	}else{
+		$('#b-background').fadeOut(400);
+	}
 }
+
 $(window).resize(function(){
 	reaffirmStyle();
 });
@@ -93,9 +120,10 @@ $(window).resize(function(){
 $(document).ready(function(){
 	/*Full Page*/
 	$('#fullpage').fullpage({
-		anchors:['home','portfolio', 'contact'],
+		anchors:['home','portfolio', 'prototype', 'contact'],
 		fixedElements:'#nav-toggle-main, #nav-item-cont, #mobile-nav',
-		touchSensitivity:1000
+		touchSensitivity:1,
+		controlArrows:false //change
 	});
 
 	/*Text Area Expander*/
@@ -103,14 +131,6 @@ $(document).ready(function(){
 
 	/*Main Script*/
 	reaffirmStyle();
-
-	/*Buttons for Mobile Users (Provided by jstricks on 05 Nov 2014) Retrieved: 19 Mar 2015*/
-	var isMobile={Android:function(){return navigator.userAgent.match(/Android/i)},BlackBerry:function(){return navigator.userAgent.match(/BlackBerry/i)},iOS:function(){return navigator.userAgent.match(/iPhone|iPad|iPod/i)},Opera:function(){return navigator.userAgent.match(/Opera Mini/i)},Windows:function(){return navigator.userAgent.match(/IEMobile/i)},any:function(){return isMobile.Android()||isMobile.BlackBerry()||isMobile.iOS()||isMobile.Opera()||isMobile.Windows()}};
-	if(isMobile.any()) {
-		$('#mobile-nav').show();
-	}else{
-		$('#mobile-nav').hide();
-	}
 });
 
 $('.nav-item').click(function(event){

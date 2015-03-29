@@ -1,31 +1,47 @@
 #contact-wrapper{
 }
-	.contact-content{
-		width:100%;
+	.c-content{
+		position:absolute;
+		padding-left:25px;
+		height:91%;
+		text-align:left;
+		vertical-align:middle;
 	}
 
 #c-info-wrapper{
-	margin-top:25px;
+	left:60%;
+	width:40%;
 }
-	#c-info-wrapper table{
-		margin:0 auto;
+	#c-info-wrapper p{
+		margin:4px 0;
+		line-height:0.81em;
 	}
-		#c-info-wrapper td{
-			padding-left:16px;
-			padding-bottom:9px;
-			text-align:center;
+	#c-info-shrink-cont{
+		position:relative;
+		height:64%;
+	}
+		#c-spcl-email{
+			font-size:1.21em;
+			border-bottom:dashed 1px #119227;
 		}
-		.fa-envelope-o:hover{
-			color:#E64437;
+		#c-spcl-email:hover{
+			border-bottom:solid 1px #47C25C;
 		}
-		.fa-phone:hover{
-			color:#FE695D;
-		}
-		.fa-map-marker:hover{
-			color:#FF8A81;
-		}
+	.c-bold{
+		font-weight:bold;
+	}
+	.fa-envelope-o:hover{
+		color:#E64437;
+	}
+	.fa-phone:hover{
+		color:#FE695D;
+	}
+	.fa-map-marker:hover{
+		color:#FF8A81;
+	}
 
 #c-message-wrapper{
+	width:60%;
 }
 	.c-form-element{
 		width:64%;
@@ -67,7 +83,7 @@
 			border-bottom:solid 1px #47C25C;
 		}
 		.c-form-text-element:focus{
-			border-bottom:solid 4px #119227;
+			border-bottom:solid 2px #119227;
 		}
 		#c-message-wrapper [type="text"]{
 
@@ -83,17 +99,13 @@
 			#c-message-wrapper textarea:focus{
 				border-top:dotted 1px #119227;
 			}
-		.c-form-button{
-			margin-top:1px;
-			outline:solid 1px #000;
-			background:transparent;
+		#c-form-button-send{
+			float:left;
+			width:64%;
 		}
-		.c-form-button:hover{
-			border-color: #47C25C;
-		}
-		.c-form-button:active{
-			outline:solid 1px rgba(0,0,0,0.64);
-			color:rgba(0,0,0,0.64);
+		#c-form-button-share{
+			float:right;
+			width:35%;
 		}
 
 #c-footer{
@@ -102,43 +114,65 @@
 	width:100%;
 	height:9%;
 }
+	.svg-link{
+		position:absolute;
+		height:50%;
+		width:50%;
+	}
 	#c-footer table{
 		width:100%;
 		height:100%;
 		vertical-align:middle;
 	}
 		#c-footer td{
-			width:auto;
+			width:50%; /*subject to change*/
 			text-align:center;
 		}
-		.fa-behance{
-			color:#005CFF;
+
+		.fa-behance:hover,.fa-facebook:hover,.fa-google-plus:hover,.fa-twitter:hover{
+			opacity:1.00;/*
+			-webkit-text-stroke-width:0;*/
 		}
-		.fa-pinterest{
-			color:#CB2027;
+			.fa-behance:hover{
+				color:#005CFF;
+			}
+			.fa-pinterest:hover{
+				color:#CB2027;
+			}
+			.fa-facebook:hover{
+				color:#3B5998;
+			}
+			.fa-google-plus:hover{
+				color:#DC4A38;
+			}
+			.fa-twitter:hover{
+				color:#2AA9E0;
+			}
+		.fa-behance,.fa-facebook,.fa-google-plus,.fa-twitter{
+			opacity:0.81;
 		}
-		.fa-facebook{
-			color:#3B5998;
-		}
-		.fa-google-plus{
-			color:#DC4A38;
-		}
-		.fa-twitter{
-			color:#2AA9E0;
-		}
-		.fa-behance:hover,.fa-pinterest:hover,.fa-facebook:hover,.fa-google-plus:hover,.fa-twitter:hover{
-			color:#119227;
-		}
+			.fa-behance{
+				color:rgba(0,92,255,0.81);/*
+				-webkit-text-stroke-width:2px;
+				-webkit-text-stroke-color:#005CFF;*/
+			}
+			.fa-facebook{
+				color:rgba(59,89,152,0.81);/*
+				-webkit-text-stroke-width:2px;
+				-webkit-text-stroke-color:#3B5998;*/
+			}
 
 @media (max-width:441px), (max-height:441px){
 	#contact-wrapper{
 	}
 }
 
-@media (min-width:1141px){
+@media (max-width:1141px){
+	#c-info-wrapper p{
+		font-size:0.81em;
+	}
 	.c-form-element{
 		width:64%;
-		font-size:1.44em;
 	}
 }
 
