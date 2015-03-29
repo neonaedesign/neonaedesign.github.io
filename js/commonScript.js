@@ -1,3 +1,4 @@
+var isMobile==(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
 var anim_ease='easeInOutCubic';
 /*Toggle navigation for all window sizes*/
 var wWidth=$(window).width();
@@ -16,9 +17,7 @@ var navigationClick=function(){
 			left:newLeft+'px'
 		},400,anim_ease);
 	}
-	if(wWidth<1141){
-		navCont.toggleClass('navShow');
-	}else{}
+	navCont.toggleClass('navShow');
 	reaffirmStyle();
 }
 
