@@ -14,10 +14,11 @@
 	<script src="js/jquery.countdown.min.js"></script>-->
 	<script src="js/pluginScript.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/pluginStylesheet.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-	<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/commonStyle.css">
 
 	<link rel="shortcut icon" href="imgs/neonae-logo.ico">
@@ -26,15 +27,15 @@
 	<meta name="keywords" content="Neonae, graphics, graphic design, web design, corporate identity, mobile website development">
 </head>
 <script type="text/javascript">
-	$(function(){
-		html2canvas($('body'),{
-			onrendered:function(canvas){
-				$('#b-background').append(canvas);
-				$('canvas').attr('id','canvas');
-				stackblurCanvasRGB('canvas',0,0,$('canvas').width(),$('canvas').height(),9);
-			}
-		});
-	})
+	// $(function(){
+	// 	html2canvas($('body'),{
+	// 		onrendered:function(canvas){
+	// 			$('#b-background').append(canvas);
+	// 			$('canvas').attr('id','canvas');
+	// 			stackblurCanvasRGB('canvas',0,0,$('canvas').width(),$('canvas').height(),9);
+	// 		}
+	// 	});
+	// })
 	$(function() {
 	    var endDate = "April 25, 2015 23:59";
 	    $('#prototype-countdown tr').countdown({
@@ -53,7 +54,6 @@
 			<a id="nav-toggle-close" class="nav-toggle" href="">x</a>
 			<a title="Home" class="nav-item tran400" href="#home"><p>Home</p></a>
 			<a title="Portfolio" class="nav-item tran400" href="#portfolio"><p>Portfolio</p></a>
-			<!-- <a title="Updates" class="nav-item" href="#l-update">Updates</a> -->
 <!-- 			<a title="Coming Soon!" class="nav-item tran400" href=""><p>Coming Soon!</p></a>
 			<a title="Coming Soon!" class="nav-item tran400" href=""><p>Coming Soon!</p></a> -->
 			<a title="Prototype - Coming Soon!" class="nav-item tran400" href="#prototype"><p>Prototype - Coming Soon!</p></a>
@@ -98,7 +98,7 @@
 				</div>
 				<div class="project">
 					<div class="project-details">
-						<h2 class="project-title">Neonae Website</h2>
+						<h1 class="project-title">Neonae Website</h1>
 						<p class="project-description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Special thanks to <a class="glbl-spclGrn-link tran400" href="http://www.cjameszhang.com/">James Zhang</a> for offering his coding and consulting services.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Designed and coded by Neonae in Cupertino, California.</p>
 						<div class="project-buttons"><form>
 							<button type="button" id="" class="project-button tran400 glbl-bttnGrn" onClick="" value=""><i class="fa fa-download fa-fw fa-button-icon" style="font-size:1.21em;"></i>&nbsp;&nbsp;Download Image</button>
@@ -124,7 +124,7 @@
 				</div>
 				<div class="project">
 					<div class="project-details">
-						<h2 class="project-title">Neonae Website</h2>
+						<h1 class="project-title">Neonae Website</h1>
 						<p class="project-description">Neonae website.</p>
 						<div class="project-buttons"><form>
 							<button type="button" id="" class="project-button tran400 glbl-bttnGrn" onClick="" value=""><i class="fa fa-download fa-fw anchorDisabled" style="font-size:1.44em;"></i>&nbsp;&nbsp;&nbsp;Download Image</button>

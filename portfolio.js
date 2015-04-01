@@ -107,7 +107,6 @@ var calculate=function(){
 var displayContent=function(){
 	wWidth=$(window).width();
 	wHeight=$(window).height();
-
 	//console.log("Window Height: "+wHeight+", Used Height: "+usedHeight+", Footer Height: "+footerHeight+"; Window Width: "+wWidth);
 	if(wWidth>=1920){
 		footerHeight=200;
@@ -132,7 +131,7 @@ $(window).resize(function(){
 	setTimeout(function(){		//allow some animations to finish processing
 		calculate();
 		displayContent();
-	},4000)
+	},4000);
 });
 $(document).ready(function(){
 	if(isMobile){
@@ -142,4 +141,7 @@ $(document).ready(function(){
 	}
 	calculate();
 	displayContent();
+		calculate();
+		displayContent();
+	},1);
 });
