@@ -95,8 +95,8 @@ var calculate=function(){
 	wWidth=$(window).width();
 	wHeight=$(window).height();
 	if(wWidth<1140){
-		usedHeight=$('.image').height()+$('.project-details').height()+(parseInt($('.project-title').css('marginTop'))+parseInt($('button').css('marginBottom')));
-	}else if(wWidth>=1140&&wWidth<1920){
+		usedHeight=$('.project-details').height()+$('.image').height()+(parseInt($('h1').css('marginTop'))+parseInt($('button').css('marginBottom')));
+	}else if(wWidth>=1140){
 		/*usedHeight=$('#nav-item-cont').height()+$('.project-cont').height();*/
 		usedHeight=$('.image').height();
 		//usedHeight=$('.project-cont').height();
