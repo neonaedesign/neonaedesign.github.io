@@ -110,7 +110,7 @@ var displayContent=function(){
 	//console.log("Window Height: "+wHeight+", Used Height: "+usedHeight+", Footer Height: "+footerHeight+"; Window Width: "+wWidth);
 	if(wWidth>=1920){
 		footerHeight=200;
-	}else if(footerHeight<200){
+	}if(footerHeight<200){
 		if(footerHeight<=200){footerHeight=200;}
 	}else{
 		footerHeight=footerHeight;
