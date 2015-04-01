@@ -141,6 +141,7 @@ $(document).ready(function(){
 	}
 	calculate();
 	displayContent();
+	setTimeout(function(){
 		calculate();
 		displayContent();
 	},1);
